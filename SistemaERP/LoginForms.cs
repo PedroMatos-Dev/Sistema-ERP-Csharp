@@ -14,7 +14,7 @@ namespace SistemaERP {
             InitializeComponent();
         }
 
-        private void TxtLab_Exit_Click(object sender, EventArgs e) {
+        private void Txt_Exit_Click(object sender, EventArgs e) {
             Application.Exit();
         }
     }
