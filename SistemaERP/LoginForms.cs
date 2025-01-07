@@ -9,13 +9,19 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace SistemaERP {
-    public partial class Form1 : Form {
-        public Form1() {
+    public partial class LoginForms : Form {
+        public LoginForms() {
             InitializeComponent();
         }
 
-        private void Txt_Exit_Click(object sender, EventArgs e) {
+        private void TxtLab_Exit_Click(object sender, EventArgs e) {
             Application.Exit();
+        }
+
+        private void btn_Signup_Click(object sender, EventArgs e) {
+            RegisterForms registerForm = new RegisterForms();
+            registerForm.Show();
+            this.Hide();
         }
     }
 }

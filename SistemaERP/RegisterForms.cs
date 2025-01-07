@@ -13,5 +13,15 @@ namespace SistemaERP {
         public RegisterForms() {
             InitializeComponent();
         }
+
+        private void TxtLab_Exit_Click(object sender, EventArgs e) {
+            Application.Exit();
+        }
+
+        private void btn_SignIn_Click(object sender, EventArgs e) {
+            LoginForms loginForms = new LoginForms();
+            loginForms.Show();
+            this.Hide();
+        }
     }
 }

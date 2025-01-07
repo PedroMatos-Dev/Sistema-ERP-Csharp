@@ -2,9 +2,10 @@ C:\Programação\C#\SistemaERP\SistemaERP\bin\Debug\SistemaERP.exe.config
 C:\Programação\C#\SistemaERP\SistemaERP\bin\Debug\SistemaERP.exe
 C:\Programação\C#\SistemaERP\SistemaERP\bin\Debug\SistemaERP.pdb
 C:\Programação\C#\SistemaERP\SistemaERP\obj\Debug\SistemaERP.csproj.AssemblyReference.cache
-C:\Programação\C#\SistemaERP\SistemaERP\obj\Debug\SistemaERP.Form1.resources
 C:\Programação\C#\SistemaERP\SistemaERP\obj\Debug\SistemaERP.Properties.Resources.resources
 C:\Programação\C#\SistemaERP\SistemaERP\obj\Debug\SistemaERP.csproj.GenerateResource.cache
 C:\Programação\C#\SistemaERP\SistemaERP\obj\Debug\SistemaERP.csproj.CoreCompileInputs.cache
 C:\Programação\C#\SistemaERP\SistemaERP\obj\Debug\SistemaERP.exe
 C:\Programação\C#\SistemaERP\SistemaERP\obj\Debug\SistemaERP.pdb
+C:\Programação\C#\SistemaERP\SistemaERP\obj\Debug\SistemaERP.LoginForms.resources
+C:\Programação\C#\SistemaERP\SistemaERP\obj\Debug\SistemaERP.RegisterForms.resources
