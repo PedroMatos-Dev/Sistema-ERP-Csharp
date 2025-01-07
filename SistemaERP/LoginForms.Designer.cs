@@ -24,18 +24,18 @@
         /// </summary>
         private void InitializeComponent() {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.picture_Sales = new System.Windows.Forms.PictureBox();
             this.TxtLab_SalesSystem = new System.Windows.Forms.Label();
             this.btn_Signup = new System.Windows.Forms.Button();
             this.TxtLab_RegisterAccount = new System.Windows.Forms.Label();
             this.TxtLab_Exit = new System.Windows.Forms.Label();
             this.TxtLab_LoginAccount = new System.Windows.Forms.Label();
             this.TxtLab_Username = new System.Windows.Forms.Label();
-            this.TxtBox_Name = new System.Windows.Forms.TextBox();
-            this.TxtBox_Passaword = new System.Windows.Forms.TextBox();
+            this.TxtBox_NameLogin = new System.Windows.Forms.TextBox();
+            this.TxtBox_PassLogin = new System.Windows.Forms.TextBox();
             this.TxtLab_Password = new System.Windows.Forms.Label();
             this.btn_Login = new System.Windows.Forms.Button();
-            this.checkBox_ShowPassword = new System.Windows.Forms.CheckBox();
-            this.picture_Sales = new System.Windows.Forms.PictureBox();
+            this.cb_ShowPassLogin = new System.Windows.Forms.CheckBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picture_Sales)).BeginInit();
             this.SuspendLayout();
@@ -52,6 +52,15 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(256, 400);
             this.panel1.TabIndex = 0;
+            // 
+            // picture_Sales
+            // 
+            this.picture_Sales.Image = global::SistemaERP.Properties.Resources.Total_Sales;
+            this.picture_Sales.Location = new System.Drawing.Point(68, 55);
+            this.picture_Sales.Name = "picture_Sales";
+            this.picture_Sales.Size = new System.Drawing.Size(100, 100);
+            this.picture_Sales.TabIndex = 3;
+            this.picture_Sales.TabStop = false;
             // 
             // TxtLab_SalesSystem
             // 
@@ -125,23 +134,24 @@
             this.TxtLab_Username.TabIndex = 2;
             this.TxtLab_Username.Text = "Username:";
             // 
-            // TxtBox_Name
+            // TxtBox_NameLogin
             // 
-            this.TxtBox_Name.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtBox_Name.Location = new System.Drawing.Point(295, 166);
-            this.TxtBox_Name.Multiline = true;
-            this.TxtBox_Name.Name = "TxtBox_Name";
-            this.TxtBox_Name.Size = new System.Drawing.Size(240, 30);
-            this.TxtBox_Name.TabIndex = 3;
+            this.TxtBox_NameLogin.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtBox_NameLogin.Location = new System.Drawing.Point(295, 166);
+            this.TxtBox_NameLogin.Multiline = true;
+            this.TxtBox_NameLogin.Name = "TxtBox_NameLogin";
+            this.TxtBox_NameLogin.Size = new System.Drawing.Size(240, 30);
+            this.TxtBox_NameLogin.TabIndex = 3;
             // 
-            // TxtBox_Passaword
+            // TxtBox_PassLogin
             // 
-            this.TxtBox_Passaword.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtBox_Passaword.Location = new System.Drawing.Point(295, 226);
-            this.TxtBox_Passaword.Multiline = true;
-            this.TxtBox_Passaword.Name = "TxtBox_Passaword";
-            this.TxtBox_Passaword.Size = new System.Drawing.Size(240, 30);
-            this.TxtBox_Passaword.TabIndex = 5;
+            this.TxtBox_PassLogin.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtBox_PassLogin.Location = new System.Drawing.Point(295, 226);
+            this.TxtBox_PassLogin.Multiline = true;
+            this.TxtBox_PassLogin.Name = "TxtBox_PassLogin";
+            this.TxtBox_PassLogin.PasswordChar = '*';
+            this.TxtBox_PassLogin.Size = new System.Drawing.Size(240, 30);
+            this.TxtBox_PassLogin.TabIndex = 5;
             // 
             // TxtLab_Password
             // 
@@ -169,25 +179,18 @@
             this.btn_Login.TabIndex = 6;
             this.btn_Login.Text = "LOGIN";
             this.btn_Login.UseVisualStyleBackColor = false;
+            this.btn_Login.Click += new System.EventHandler(this.btn_Login_Click);
             // 
-            // checkBox_ShowPassword
+            // cb_ShowPassLogin
             // 
-            this.checkBox_ShowPassword.AutoSize = true;
-            this.checkBox_ShowPassword.Location = new System.Drawing.Point(433, 262);
-            this.checkBox_ShowPassword.Name = "checkBox_ShowPassword";
-            this.checkBox_ShowPassword.Size = new System.Drawing.Size(102, 17);
-            this.checkBox_ShowPassword.TabIndex = 7;
-            this.checkBox_ShowPassword.Text = "Show Password";
-            this.checkBox_ShowPassword.UseVisualStyleBackColor = true;
-            // 
-            // picture_Sales
-            // 
-            this.picture_Sales.Image = global::SistemaERP.Properties.Resources.Total_Sales;
-            this.picture_Sales.Location = new System.Drawing.Point(68, 55);
-            this.picture_Sales.Name = "picture_Sales";
-            this.picture_Sales.Size = new System.Drawing.Size(100, 100);
-            this.picture_Sales.TabIndex = 3;
-            this.picture_Sales.TabStop = false;
+            this.cb_ShowPassLogin.AutoSize = true;
+            this.cb_ShowPassLogin.Location = new System.Drawing.Point(433, 262);
+            this.cb_ShowPassLogin.Name = "cb_ShowPassLogin";
+            this.cb_ShowPassLogin.Size = new System.Drawing.Size(102, 17);
+            this.cb_ShowPassLogin.TabIndex = 7;
+            this.cb_ShowPassLogin.Text = "Show Password";
+            this.cb_ShowPassLogin.UseVisualStyleBackColor = true;
+            this.cb_ShowPassLogin.CheckedChanged += new System.EventHandler(this.cb_ShowPassLogin_CheckedChanged);
             // 
             // LoginForms
             // 
@@ -195,11 +198,11 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.ClientSize = new System.Drawing.Size(575, 400);
-            this.Controls.Add(this.checkBox_ShowPassword);
+            this.Controls.Add(this.cb_ShowPassLogin);
             this.Controls.Add(this.btn_Login);
-            this.Controls.Add(this.TxtBox_Passaword);
+            this.Controls.Add(this.TxtBox_PassLogin);
             this.Controls.Add(this.TxtLab_Password);
-            this.Controls.Add(this.TxtBox_Name);
+            this.Controls.Add(this.TxtBox_NameLogin);
             this.Controls.Add(this.TxtLab_Username);
             this.Controls.Add(this.TxtLab_LoginAccount);
             this.Controls.Add(this.TxtLab_Exit);
@@ -222,11 +225,11 @@
         private System.Windows.Forms.Label TxtLab_Exit;
         private System.Windows.Forms.Label TxtLab_LoginAccount;
         private System.Windows.Forms.Label TxtLab_Username;
-        private System.Windows.Forms.TextBox TxtBox_Name;
-        private System.Windows.Forms.TextBox TxtBox_Passaword;
+        private System.Windows.Forms.TextBox TxtBox_NameLogin;
+        private System.Windows.Forms.TextBox TxtBox_PassLogin;
         private System.Windows.Forms.Label TxtLab_Password;
         private System.Windows.Forms.Button btn_Login;
-        private System.Windows.Forms.CheckBox checkBox_ShowPassword;
+        private System.Windows.Forms.CheckBox cb_ShowPassLogin;
         private System.Windows.Forms.PictureBox picture_Sales;
         private System.Windows.Forms.Label TxtLab_SalesSystem;
         private System.Windows.Forms.Button btn_Signup;
