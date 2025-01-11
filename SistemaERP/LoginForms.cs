@@ -59,6 +59,10 @@ namespace SistemaERP {
                             if(table.Rows.Count >= 1) {
                                 MessageBox.Show("Login bem sucedido!", 
                                                 "information Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                                MainForm mainForm = new MainForm();
+                                mainForm.Show();
+                                this.Hide();
                             }
                             else {
                                 MessageBox.Show("Nome de usuário ou senha incorretos!",
