@@ -46,11 +46,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddCliente.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AddCliente.Designer.cs">
+      <DependentUpon>AddCliente.cs</DependentUpon>
+    </Compile>
     <Compile Include="Clientes.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="Clientes.Designer.cs">
       <DependentUpon>Clientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultarCliente.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ConsultarCliente.Designer.cs">
+      <DependentUpon>ConsultarCliente.cs</DependentUpon>
     </Compile>
     <Compile Include="Dashbord.cs">
       <SubType>UserControl</SubType>
@@ -90,8 +102,14 @@
     <Compile Include="RegisterForms.Designer.cs">
       <DependentUpon>RegisterForms.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="AddCliente.resx">
+      <DependentUpon>AddCliente.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Clientes.resx">
       <DependentUpon>Clientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConsultarCliente.resx">
+      <DependentUpon>ConsultarCliente.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Dashbord.resx">
       <DependentUpon>Dashbord.cs</DependentUpon>

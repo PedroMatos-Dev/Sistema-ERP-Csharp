@@ -11,3 +11,6 @@ C:\Programação\C#\SistemaERP\SistemaERP\obj\Debug\SistemaERP.LoginForms.resour
 C:\Programação\C#\SistemaERP\SistemaERP\obj\Debug\SistemaERP.RegisterForms.resources
 C:\Programação\C#\SistemaERP\SistemaERP\obj\Debug\SistemaERP.MainForm.resources
 C:\Programação\C#\SistemaERP\SistemaERP\obj\Debug\SistemaERP.PainelVenda.resources
+C:\Programação\C#\SistemaERP\SistemaERP\obj\Debug\SistemaERP.Clientes.resources
+C:\Programação\C#\SistemaERP\SistemaERP\obj\Debug\SistemaERP.Dashbord.resources
+C:\Programação\C#\SistemaERP\SistemaERP\obj\Debug\SistemaERP.Estoque.resources

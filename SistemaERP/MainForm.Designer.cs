@@ -32,18 +32,23 @@
             this.lb_Exit = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.button5 = new System.Windows.Forms.Button();
+            this.bnt_Venda = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btn_Logout = new System.Windows.Forms.Button();
+            this.bnt_Dashbord = new System.Windows.Forms.Button();
+            this.bnt_Estoque = new System.Windows.Forms.Button();
+            this.bnt_Cliente = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.MainForms = new System.Windows.Forms.Panel();
+            this.clientes1 = new SistemaERP.Clientes();
+            this.dashbord1 = new SistemaERP.Dashbord();
+            this.estoque1 = new SistemaERP.Estoque();
+            this.painelVenda1 = new SistemaERP.PainelVenda();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.MainForms.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -84,12 +89,12 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(11)))), ((int)(((byte)(97)))));
-            this.panel2.Controls.Add(this.button5);
+            this.panel2.Controls.Add(this.bnt_Venda);
             this.panel2.Controls.Add(this.label4);
-            this.panel2.Controls.Add(this.button4);
-            this.panel2.Controls.Add(this.button3);
-            this.panel2.Controls.Add(this.button2);
-            this.panel2.Controls.Add(this.button1);
+            this.panel2.Controls.Add(this.btn_Logout);
+            this.panel2.Controls.Add(this.bnt_Dashbord);
+            this.panel2.Controls.Add(this.bnt_Estoque);
+            this.panel2.Controls.Add(this.bnt_Cliente);
             this.panel2.Controls.Add(this.label3);
             this.panel2.Controls.Add(this.pictureBox1);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
@@ -98,23 +103,24 @@
             this.panel2.Size = new System.Drawing.Size(235, 565);
             this.panel2.TabIndex = 1;
             // 
-            // button5
+            // bnt_Venda
             // 
-            this.button5.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button5.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(8)))), ((int)(((byte)(135)))));
-            this.button5.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(8)))), ((int)(((byte)(135)))));
-            this.button5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(8)))), ((int)(((byte)(135)))));
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.ForeColor = System.Drawing.Color.White;
-            this.button5.Image = global::SistemaERP.Properties.Resources.customers1;
-            this.button5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button5.Location = new System.Drawing.Point(21, 244);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(195, 45);
-            this.button5.TabIndex = 7;
-            this.button5.Text = "VENDA";
-            this.button5.UseVisualStyleBackColor = true;
+            this.bnt_Venda.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bnt_Venda.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(8)))), ((int)(((byte)(135)))));
+            this.bnt_Venda.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(8)))), ((int)(((byte)(135)))));
+            this.bnt_Venda.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(8)))), ((int)(((byte)(135)))));
+            this.bnt_Venda.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bnt_Venda.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bnt_Venda.ForeColor = System.Drawing.Color.White;
+            this.bnt_Venda.Image = global::SistemaERP.Properties.Resources.customers1;
+            this.bnt_Venda.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.bnt_Venda.Location = new System.Drawing.Point(21, 244);
+            this.bnt_Venda.Name = "bnt_Venda";
+            this.bnt_Venda.Size = new System.Drawing.Size(195, 45);
+            this.bnt_Venda.TabIndex = 7;
+            this.bnt_Venda.Text = "VENDA";
+            this.bnt_Venda.UseVisualStyleBackColor = true;
+            this.bnt_Venda.Click += new System.EventHandler(this.bnt_Venda_Click);
             // 
             // label4
             // 
@@ -127,75 +133,79 @@
             this.label4.TabIndex = 6;
             this.label4.Text = "Deslogar";
             // 
-            // button4
+            // btn_Logout
             // 
-            this.button4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(8)))), ((int)(((byte)(135)))));
-            this.button4.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(8)))), ((int)(((byte)(135)))));
-            this.button4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(8)))), ((int)(((byte)(135)))));
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.Image = global::SistemaERP.Properties.Resources.Move_Up;
-            this.button4.Location = new System.Drawing.Point(3, 527);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(35, 35);
-            this.button4.TabIndex = 5;
-            this.button4.UseVisualStyleBackColor = true;
+            this.btn_Logout.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_Logout.FlatAppearance.BorderSize = 0;
+            this.btn_Logout.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(8)))), ((int)(((byte)(135)))));
+            this.btn_Logout.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(8)))), ((int)(((byte)(135)))));
+            this.btn_Logout.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(8)))), ((int)(((byte)(135)))));
+            this.btn_Logout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Logout.ForeColor = System.Drawing.Color.White;
+            this.btn_Logout.Image = global::SistemaERP.Properties.Resources.Move_Up;
+            this.btn_Logout.Location = new System.Drawing.Point(3, 527);
+            this.btn_Logout.Name = "btn_Logout";
+            this.btn_Logout.Size = new System.Drawing.Size(35, 35);
+            this.btn_Logout.TabIndex = 5;
+            this.btn_Logout.UseVisualStyleBackColor = true;
+            this.btn_Logout.Click += new System.EventHandler(this.btn_Logout_Click);
             // 
-            // button3
+            // bnt_Dashbord
             // 
-            this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button3.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(8)))), ((int)(((byte)(135)))));
-            this.button3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(8)))), ((int)(((byte)(135)))));
-            this.button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(8)))), ((int)(((byte)(135)))));
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Image = global::SistemaERP.Properties.Resources.Dashboard1;
-            this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.Location = new System.Drawing.Point(21, 432);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(195, 45);
-            this.button3.TabIndex = 4;
-            this.button3.Text = "DASHBORD";
-            this.button3.UseVisualStyleBackColor = true;
+            this.bnt_Dashbord.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bnt_Dashbord.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(8)))), ((int)(((byte)(135)))));
+            this.bnt_Dashbord.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(8)))), ((int)(((byte)(135)))));
+            this.bnt_Dashbord.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(8)))), ((int)(((byte)(135)))));
+            this.bnt_Dashbord.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bnt_Dashbord.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bnt_Dashbord.ForeColor = System.Drawing.Color.White;
+            this.bnt_Dashbord.Image = global::SistemaERP.Properties.Resources.Dashboard1;
+            this.bnt_Dashbord.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.bnt_Dashbord.Location = new System.Drawing.Point(21, 432);
+            this.bnt_Dashbord.Name = "bnt_Dashbord";
+            this.bnt_Dashbord.Size = new System.Drawing.Size(195, 45);
+            this.bnt_Dashbord.TabIndex = 4;
+            this.bnt_Dashbord.Text = "DASHBORD";
+            this.bnt_Dashbord.UseVisualStyleBackColor = true;
+            this.bnt_Dashbord.Click += new System.EventHandler(this.bnt_Dashbord_Click);
             // 
-            // button2
+            // bnt_Estoque
             // 
-            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button2.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(8)))), ((int)(((byte)(135)))));
-            this.button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(8)))), ((int)(((byte)(135)))));
-            this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(8)))), ((int)(((byte)(135)))));
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Image = global::SistemaERP.Properties.Resources.Sell_Stock1;
-            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(21, 370);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(195, 45);
-            this.button2.TabIndex = 3;
-            this.button2.Text = "ESTOQUE";
-            this.button2.UseVisualStyleBackColor = true;
+            this.bnt_Estoque.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bnt_Estoque.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(8)))), ((int)(((byte)(135)))));
+            this.bnt_Estoque.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(8)))), ((int)(((byte)(135)))));
+            this.bnt_Estoque.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(8)))), ((int)(((byte)(135)))));
+            this.bnt_Estoque.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bnt_Estoque.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bnt_Estoque.ForeColor = System.Drawing.Color.White;
+            this.bnt_Estoque.Image = global::SistemaERP.Properties.Resources.Sell_Stock1;
+            this.bnt_Estoque.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.bnt_Estoque.Location = new System.Drawing.Point(21, 370);
+            this.bnt_Estoque.Name = "bnt_Estoque";
+            this.bnt_Estoque.Size = new System.Drawing.Size(195, 45);
+            this.bnt_Estoque.TabIndex = 3;
+            this.bnt_Estoque.Text = "ESTOQUE";
+            this.bnt_Estoque.UseVisualStyleBackColor = true;
+            this.bnt_Estoque.Click += new System.EventHandler(this.bnt_Estoque_Click);
             // 
-            // button1
+            // bnt_Cliente
             // 
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(8)))), ((int)(((byte)(135)))));
-            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(8)))), ((int)(((byte)(135)))));
-            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(8)))), ((int)(((byte)(135)))));
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Image = global::SistemaERP.Properties.Resources.customers1;
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(21, 306);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(195, 45);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "CLIENTE";
-            this.button1.UseVisualStyleBackColor = true;
+            this.bnt_Cliente.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bnt_Cliente.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(8)))), ((int)(((byte)(135)))));
+            this.bnt_Cliente.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(8)))), ((int)(((byte)(135)))));
+            this.bnt_Cliente.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(8)))), ((int)(((byte)(135)))));
+            this.bnt_Cliente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bnt_Cliente.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bnt_Cliente.ForeColor = System.Drawing.Color.White;
+            this.bnt_Cliente.Image = global::SistemaERP.Properties.Resources.customers1;
+            this.bnt_Cliente.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.bnt_Cliente.Location = new System.Drawing.Point(21, 306);
+            this.bnt_Cliente.Name = "bnt_Cliente";
+            this.bnt_Cliente.Size = new System.Drawing.Size(195, 45);
+            this.bnt_Cliente.TabIndex = 2;
+            this.bnt_Cliente.Text = "CLIENTE";
+            this.bnt_Cliente.UseVisualStyleBackColor = true;
+            this.bnt_Cliente.Click += new System.EventHandler(this.bnt_Cliente_Click);
             // 
             // label3
             // 
@@ -219,12 +229,45 @@
             // 
             // MainForms
             // 
+            this.MainForms.Controls.Add(this.painelVenda1);
+            this.MainForms.Controls.Add(this.estoque1);
+            this.MainForms.Controls.Add(this.clientes1);
+            this.MainForms.Controls.Add(this.dashbord1);
             this.MainForms.Dock = System.Windows.Forms.DockStyle.Fill;
             this.MainForms.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.MainForms.Location = new System.Drawing.Point(235, 35);
             this.MainForms.Name = "MainForms";
             this.MainForms.Size = new System.Drawing.Size(865, 565);
             this.MainForms.TabIndex = 2;
+            // 
+            // clientes1
+            // 
+            this.clientes1.Location = new System.Drawing.Point(0, 0);
+            this.clientes1.Name = "clientes1";
+            this.clientes1.Size = new System.Drawing.Size(865, 565);
+            this.clientes1.TabIndex = 1;
+            // 
+            // dashbord1
+            // 
+            this.dashbord1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.dashbord1.Location = new System.Drawing.Point(0, 0);
+            this.dashbord1.Name = "dashbord1";
+            this.dashbord1.Size = new System.Drawing.Size(865, 565);
+            this.dashbord1.TabIndex = 0;
+            // 
+            // estoque1
+            // 
+            this.estoque1.Location = new System.Drawing.Point(0, 0);
+            this.estoque1.Name = "estoque1";
+            this.estoque1.Size = new System.Drawing.Size(865, 565);
+            this.estoque1.TabIndex = 2;
+            // 
+            // painelVenda1
+            // 
+            this.painelVenda1.Location = new System.Drawing.Point(0, 0);
+            this.painelVenda1.Name = "painelVenda1";
+            this.painelVenda1.Size = new System.Drawing.Size(865, 565);
+            this.painelVenda1.TabIndex = 3;
             // 
             // MainForm
             // 
@@ -243,6 +286,7 @@
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.MainForms.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -255,12 +299,16 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button bnt_Cliente;
+        private System.Windows.Forms.Button btn_Logout;
+        private System.Windows.Forms.Button bnt_Dashbord;
+        private System.Windows.Forms.Button bnt_Estoque;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button bnt_Venda;
         private System.Windows.Forms.Panel MainForms;
+        private Clientes clientes1;
+        private Dashbord dashbord1;
+        private PainelVenda painelVenda1;
+        private Estoque estoque1;
     }
 }
