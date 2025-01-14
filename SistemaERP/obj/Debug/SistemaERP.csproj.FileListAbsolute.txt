@@ -10,3 +10,4 @@ C:\Programação\C#\SistemaERP\SistemaERP\obj\Debug\SistemaERP.pdb
 C:\Programação\C#\SistemaERP\SistemaERP\obj\Debug\SistemaERP.LoginForms.resources
 C:\Programação\C#\SistemaERP\SistemaERP\obj\Debug\SistemaERP.RegisterForms.resources
 C:\Programação\C#\SistemaERP\SistemaERP\obj\Debug\SistemaERP.MainForm.resources
+C:\Programação\C#\SistemaERP\SistemaERP\obj\Debug\SistemaERP.PainelVenda.resources

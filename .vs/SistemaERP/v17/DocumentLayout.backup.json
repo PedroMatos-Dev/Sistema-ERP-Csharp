@@ -3,31 +3,41 @@
   "WorkspaceRootPath": "C:\\Programa\u00E7\u00E3o\\C#\\SistemaERP\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6AC507DE-0B9B-4EC5-B568-2ACC47CF2AB2}|SistemaERP\\SistemaERP.csproj|c:\\programa\u00E7\u00E3o\\c#\\sistemaerp\\sistemaerp\\painelvenda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{6AC507DE-0B9B-4EC5-B568-2ACC47CF2AB2}|SistemaERP\\SistemaERP.csproj|solutionrelative:sistemaerp\\painelvenda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{6AC507DE-0B9B-4EC5-B568-2ACC47CF2AB2}|SistemaERP\\SistemaERP.csproj|c:\\programa\u00E7\u00E3o\\c#\\sistemaerp\\sistemaerp\\dashbord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{6AC507DE-0B9B-4EC5-B568-2ACC47CF2AB2}|SistemaERP\\SistemaERP.csproj|solutionrelative:sistemaerp\\dashbord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6AC507DE-0B9B-4EC5-B568-2ACC47CF2AB2}|SistemaERP\\SistemaERP.csproj|c:\\programa\u00E7\u00E3o\\c#\\sistemaerp\\sistemaerp\\estoque.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{6AC507DE-0B9B-4EC5-B568-2ACC47CF2AB2}|SistemaERP\\SistemaERP.csproj|solutionrelative:sistemaerp\\estoque.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6AC507DE-0B9B-4EC5-B568-2ACC47CF2AB2}|SistemaERP\\SistemaERP.csproj|C:\\Programa\u00E7\u00E3o\\C#\\SistemaERP\\sistemaerp\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{6AC507DE-0B9B-4EC5-B568-2ACC47CF2AB2}|SistemaERP\\SistemaERP.csproj|solutionrelative:sistemaerp\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6AC507DE-0B9B-4EC5-B568-2ACC47CF2AB2}|SistemaERP\\SistemaERP.csproj|C:\\Programa\u00E7\u00E3o\\C#\\SistemaERP\\sistemaerp\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6AC507DE-0B9B-4EC5-B568-2ACC47CF2AB2}|SistemaERP\\SistemaERP.csproj|solutionrelative:sistemaerp\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6AC507DE-0B9B-4EC5-B568-2ACC47CF2AB2}|SistemaERP\\SistemaERP.csproj|c:\\programa\u00E7\u00E3o\\c#\\sistemaerp\\sistemaerp\\painelvenda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{6AC507DE-0B9B-4EC5-B568-2ACC47CF2AB2}|SistemaERP\\SistemaERP.csproj|solutionrelative:sistemaerp\\painelvenda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6AC507DE-0B9B-4EC5-B568-2ACC47CF2AB2}|SistemaERP\\SistemaERP.csproj|c:\\programa\u00E7\u00E3o\\c#\\sistemaerp\\sistemaerp\\painelvenda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6AC507DE-0B9B-4EC5-B568-2ACC47CF2AB2}|SistemaERP\\SistemaERP.csproj|solutionrelative:sistemaerp\\painelvenda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6AC507DE-0B9B-4EC5-B568-2ACC47CF2AB2}|SistemaERP\\SistemaERP.csproj|C:\\Programa\u00E7\u00E3o\\C#\\SistemaERP\\sistemaerp\\loginforms.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6AC507DE-0B9B-4EC5-B568-2ACC47CF2AB2}|SistemaERP\\SistemaERP.csproj|solutionrelative:sistemaerp\\loginforms.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6AC507DE-0B9B-4EC5-B568-2ACC47CF2AB2}|SistemaERP\\SistemaERP.csproj|c:\\programa\u00E7\u00E3o\\c#\\sistemaerp\\sistemaerp\\clientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{6AC507DE-0B9B-4EC5-B568-2ACC47CF2AB2}|SistemaERP\\SistemaERP.csproj|solutionrelative:sistemaerp\\clientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6AC507DE-0B9B-4EC5-B568-2ACC47CF2AB2}|SistemaERP\\SistemaERP.csproj|C:\\Programa\u00E7\u00E3o\\C#\\SistemaERP\\sistemaerp\\loginforms.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{6AC507DE-0B9B-4EC5-B568-2ACC47CF2AB2}|SistemaERP\\SistemaERP.csproj|solutionrelative:sistemaerp\\loginforms.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{6AC507DE-0B9B-4EC5-B568-2ACC47CF2AB2}|SistemaERP\\SistemaERP.csproj|C:\\Programa\u00E7\u00E3o\\C#\\SistemaERP\\sistemaerp\\loginforms.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6AC507DE-0B9B-4EC5-B568-2ACC47CF2AB2}|SistemaERP\\SistemaERP.csproj|solutionrelative:sistemaerp\\loginforms.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Programa\u00E7\u00E3o\\Banco\\SalesSystem - C#\\SQLQuery1.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Programa\u00E7\u00E3o\\Banco\\SalesSystem - C#\\SQLQuery1.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Programa\u00E7\u00E3o\\Banco\\SalesSystem - C#\\SQLQuery1.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|ResultFrame"
     }
   ],
   "DocumentGroupContainers": [
@@ -37,7 +47,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -49,20 +59,43 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "PainelVenda.cs",
-              "DocumentMoniker": "C:\\Programa\u00E7\u00E3o\\C#\\SistemaERP\\SistemaERP\\PainelVenda.cs",
-              "RelativeDocumentMoniker": "SistemaERP\\PainelVenda.cs",
-              "ToolTip": "C:\\Programa\u00E7\u00E3o\\C#\\SistemaERP\\SistemaERP\\PainelVenda.cs",
-              "RelativeToolTip": "SistemaERP\\PainelVenda.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAewA8AAAAAAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "Dashbord.cs [Design]",
+              "DocumentMoniker": "C:\\Programa\u00E7\u00E3o\\C#\\SistemaERP\\SistemaERP\\Dashbord.cs",
+              "RelativeDocumentMoniker": "SistemaERP\\Dashbord.cs",
+              "ToolTip": "C:\\Programa\u00E7\u00E3o\\C#\\SistemaERP\\SistemaERP\\Dashbord.cs [Design]",
+              "RelativeToolTip": "SistemaERP\\Dashbord.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-11T18:53:59.124Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-14T15:59:53.045Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
+              "Title": "Estoque.cs [Design]",
+              "DocumentMoniker": "C:\\Programa\u00E7\u00E3o\\C#\\SistemaERP\\SistemaERP\\Estoque.cs",
+              "RelativeDocumentMoniker": "SistemaERP\\Estoque.cs",
+              "ToolTip": "C:\\Programa\u00E7\u00E3o\\C#\\SistemaERP\\SistemaERP\\Estoque.cs [Design]",
+              "RelativeToolTip": "SistemaERP\\Estoque.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-14T15:25:37.29Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Clientes.cs [Design]",
+              "DocumentMoniker": "C:\\Programa\u00E7\u00E3o\\C#\\SistemaERP\\SistemaERP\\Clientes.cs",
+              "RelativeDocumentMoniker": "SistemaERP\\Clientes.cs",
+              "ToolTip": "C:\\Programa\u00E7\u00E3o\\C#\\SistemaERP\\SistemaERP\\Clientes.cs [Design]",
+              "RelativeToolTip": "SistemaERP\\Clientes.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-14T13:57:53.167Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "PainelVenda.cs [Design]",
               "DocumentMoniker": "C:\\Programa\u00E7\u00E3o\\C#\\SistemaERP\\SistemaERP\\PainelVenda.cs",
               "RelativeDocumentMoniker": "SistemaERP\\PainelVenda.cs",
@@ -74,24 +107,36 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "SQLQuery1.sql",
-              "DocumentMoniker": "C:\\Programa\u00E7\u00E3o\\Banco\\SalesSystem - C#\\SQLQuery1.sql",
-              "RelativeDocumentMoniker": "..\\..\\Banco\\SalesSystem - C#\\SQLQuery1.sql",
-              "ToolTip": "C:\\Programa\u00E7\u00E3o\\Banco\\SalesSystem - C#\\SQLQuery1.sql",
-              "RelativeToolTip": "..\\..\\Banco\\SalesSystem - C#\\SQLQuery1.sql",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2025-01-07T18:35:17.07Z"
+              "DocumentIndex": 2,
+              "Title": "MainForm.cs [Design]",
+              "DocumentMoniker": "C:\\Programa\u00E7\u00E3o\\C#\\SistemaERP\\SistemaERP\\MainForm.cs",
+              "RelativeDocumentMoniker": "SistemaERP\\MainForm.cs",
+              "ToolTip": "C:\\Programa\u00E7\u00E3o\\C#\\SistemaERP\\SistemaERP\\MainForm.cs [Design]",
+              "RelativeToolTip": "SistemaERP\\MainForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-11T15:42:57.194Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 7,
+              "Title": "SQLQuery1.sql ",
+              "DocumentMoniker": "C:\\Programa\u00E7\u00E3o\\Banco\\SalesSystem - C#\\SQLQuery1.sql",
+              "RelativeDocumentMoniker": "..\\..\\Banco\\SalesSystem - C#\\SQLQuery1.sql",
+              "ToolTip": "SQLQuery1.sql ",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2025-01-07T18:35:17.07Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "LoginForms.cs",
               "DocumentMoniker": "C:\\Programa\u00E7\u00E3o\\C#\\SistemaERP\\SistemaERP\\LoginForms.cs",
               "RelativeDocumentMoniker": "SistemaERP\\LoginForms.cs",
               "ToolTip": "C:\\Programa\u00E7\u00E3o\\C#\\SistemaERP\\SistemaERP\\LoginForms.cs",
               "RelativeToolTip": "SistemaERP\\LoginForms.cs",
-              "ViewState": "AgIAADEAAAAAAAAAAAAQwEAAAAAsAAAAAAAAAA==",
+              "ViewState": "AgIAABUAAAAAAAAAAAA5wA8AAABMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-06T23:36:36.283Z",
               "EditorCaption": ""
@@ -106,31 +151,6 @@
               "RelativeToolTip": "SistemaERP\\LoginForms.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-06T21:21:04.193Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "MainForm.cs",
-              "DocumentMoniker": "C:\\Programa\u00E7\u00E3o\\C#\\SistemaERP\\SistemaERP\\MainForm.cs",
-              "RelativeDocumentMoniker": "SistemaERP\\MainForm.cs",
-              "ToolTip": "C:\\Programa\u00E7\u00E3o\\C#\\SistemaERP\\SistemaERP\\MainForm.cs",
-              "RelativeToolTip": "SistemaERP\\MainForm.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-11T16:47:13.247Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "MainForm.cs [Design]",
-              "DocumentMoniker": "C:\\Programa\u00E7\u00E3o\\C#\\SistemaERP\\SistemaERP\\MainForm.cs",
-              "RelativeDocumentMoniker": "SistemaERP\\MainForm.cs",
-              "ToolTip": "C:\\Programa\u00E7\u00E3o\\C#\\SistemaERP\\SistemaERP\\MainForm.cs [Design]",
-              "RelativeToolTip": "SistemaERP\\MainForm.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-11T15:42:57.194Z",
               "EditorCaption": " [Design]"
             }
           ]

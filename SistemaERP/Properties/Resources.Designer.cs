@@ -63,6 +63,26 @@ namespace SistemaERP.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Add_Administrator {
+            get {
+                object obj = ResourceManager.GetObject("Add Administrator", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Add_Administrator1 {
+            get {
+                object obj = ResourceManager.GetObject("Add Administrator1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap customers {
             get {
                 object obj = ResourceManager.GetObject("customers", resourceCulture);
@@ -106,6 +126,16 @@ namespace SistemaERP.Properties {
         internal static System.Drawing.Bitmap Move_Up {
             get {
                 object obj = ResourceManager.GetObject("Move Up", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Search_Client {
+            get {
+                object obj = ResourceManager.GetObject("Search Client", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
