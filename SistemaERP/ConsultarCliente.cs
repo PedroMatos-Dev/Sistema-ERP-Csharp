@@ -9,9 +9,17 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace SistemaERP {
-    public partial class ConsultarCliente : UserControl {
+    public partial class ConsultarCliente : Form {
         public ConsultarCliente() {
             InitializeComponent();
+        }
+
+        private void ConsultarCliente_Load(object sender, EventArgs e) {
+
+        }
+
+        private void bnt_Sair_Click(object sender, EventArgs e) {
+            this.Close();
         }
     }
 }

@@ -47,11 +47,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AddCliente.cs">
-      <SubType>UserControl</SubType>
+      <SubType>Form</SubType>
     </Compile>
     <Compile Include="AddCliente.Designer.cs">
       <DependentUpon>AddCliente.cs</DependentUpon>
     </Compile>
+    <Compile Include="ClienteData.cs" />
     <Compile Include="Clientes.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -59,7 +60,7 @@
       <DependentUpon>Clientes.cs</DependentUpon>
     </Compile>
     <Compile Include="ConsultarCliente.cs">
-      <SubType>UserControl</SubType>
+      <SubType>Form</SubType>
     </Compile>
     <Compile Include="ConsultarCliente.Designer.cs">
       <DependentUpon>ConsultarCliente.cs</DependentUpon>
@@ -102,6 +103,7 @@
     <Compile Include="RegisterForms.Designer.cs">
       <DependentUpon>RegisterForms.cs</DependentUpon>
     </Compile>
+    <Compile Include="ValidacoesCliente.cs" />
     <EmbeddedResource Include="AddCliente.resx">
       <DependentUpon>AddCliente.cs</DependentUpon>
     </EmbeddedResource>
@@ -184,6 +186,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Search Client.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Directory\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -81,5 +81,9 @@ namespace SistemaERP {
                 
             }
         }
+
+        private void LoginForms_Load(object sender, EventArgs e) {
+
+        }
     }
 }
