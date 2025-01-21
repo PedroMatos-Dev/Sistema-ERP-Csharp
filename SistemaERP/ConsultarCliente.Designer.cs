@@ -24,47 +24,42 @@
         /// </summary>
         private void InitializeComponent() {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.Txt_Cidade = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
             this.bnt_Sair = new System.Windows.Forms.Button();
             this.bnt_Limpar = new System.Windows.Forms.Button();
             this.bnt_Consultar = new System.Windows.Forms.Button();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.Txt_CPF = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
+            this.Txt_Email = new System.Windows.Forms.TextBox();
+            this.Txt_Nome = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgv_ClientesConsulta = new System.Windows.Forms.DataGridView();
             this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Nome = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Email = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CPF = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Jogo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Celular = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Cidade = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Data = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CEP = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_ClientesConsulta)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(11)))), ((int)(((byte)(97)))));
+            this.panel1.Controls.Add(this.Txt_Cidade);
+            this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.bnt_Sair);
             this.panel1.Controls.Add(this.bnt_Limpar);
             this.panel1.Controls.Add(this.bnt_Consultar);
-            this.panel1.Controls.Add(this.textBox5);
+            this.panel1.Controls.Add(this.Txt_CPF);
             this.panel1.Controls.Add(this.label6);
-            this.panel1.Controls.Add(this.textBox4);
-            this.panel1.Controls.Add(this.label5);
-            this.panel1.Controls.Add(this.textBox3);
-            this.panel1.Controls.Add(this.textBox2);
-            this.panel1.Controls.Add(this.textBox1);
-            this.panel1.Controls.Add(this.label4);
+            this.panel1.Controls.Add(this.Txt_Email);
+            this.panel1.Controls.Add(this.Txt_Nome);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label1);
@@ -72,6 +67,24 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(219, 559);
             this.panel1.TabIndex = 0;
+            // 
+            // Txt_Cidade
+            // 
+            this.Txt_Cidade.Location = new System.Drawing.Point(30, 280);
+            this.Txt_Cidade.Name = "Txt_Cidade";
+            this.Txt_Cidade.Size = new System.Drawing.Size(163, 20);
+            this.Txt_Cidade.TabIndex = 15;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.Location = new System.Drawing.Point(9, 259);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(56, 18);
+            this.label4.TabIndex = 14;
+            this.label4.Text = "Cidade:";
             // 
             // bnt_Sair
             // 
@@ -101,6 +114,7 @@
             this.bnt_Limpar.TabIndex = 12;
             this.bnt_Limpar.Text = "Limpar";
             this.bnt_Limpar.UseVisualStyleBackColor = true;
+            this.bnt_Limpar.Click += new System.EventHandler(this.bnt_Limpar_Click);
             // 
             // bnt_Consultar
             // 
@@ -115,74 +129,39 @@
             this.bnt_Consultar.TabIndex = 11;
             this.bnt_Consultar.Text = "Consultar";
             this.bnt_Consultar.UseVisualStyleBackColor = true;
+            this.bnt_Consultar.Click += new System.EventHandler(this.bnt_Consultar_Click);
             // 
-            // textBox5
+            // Txt_CPF
             // 
-            this.textBox5.Location = new System.Drawing.Point(30, 274);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(163, 20);
-            this.textBox5.TabIndex = 10;
+            this.Txt_CPF.Location = new System.Drawing.Point(30, 228);
+            this.Txt_CPF.Name = "Txt_CPF";
+            this.Txt_CPF.Size = new System.Drawing.Size(163, 20);
+            this.Txt_CPF.TabIndex = 10;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(9, 253);
+            this.label6.Location = new System.Drawing.Point(27, 207);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(56, 18);
+            this.label6.Size = new System.Drawing.Size(38, 18);
             this.label6.TabIndex = 9;
-            this.label6.Text = "Cidade:";
+            this.label6.Text = "CPF:";
             // 
-            // textBox4
+            // Txt_Email
             // 
-            this.textBox4.Location = new System.Drawing.Point(30, 331);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(163, 20);
-            this.textBox4.TabIndex = 8;
+            this.Txt_Email.Location = new System.Drawing.Point(30, 171);
+            this.Txt_Email.Name = "Txt_Email";
+            this.Txt_Email.Size = new System.Drawing.Size(163, 20);
+            this.Txt_Email.TabIndex = 5;
             // 
-            // label5
+            // Txt_Nome
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(21, 310);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(44, 18);
-            this.label5.TabIndex = 7;
-            this.label5.Text = "Data:";
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(30, 221);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(163, 20);
-            this.textBox3.TabIndex = 6;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(30, 171);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(163, 20);
-            this.textBox2.TabIndex = 5;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(30, 114);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(163, 20);
-            this.textBox1.TabIndex = 4;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(22, 200);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(43, 18);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "Jogo:";
+            this.Txt_Nome.Location = new System.Drawing.Point(30, 114);
+            this.Txt_Nome.Name = "Txt_Nome";
+            this.Txt_Nome.Size = new System.Drawing.Size(163, 20);
+            this.Txt_Nome.TabIndex = 4;
             // 
             // label3
             // 
@@ -217,34 +196,26 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Consulta de Venda";
             // 
-            // panel2
+            // dgv_ClientesConsulta
             // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(11)))), ((int)(((byte)(97)))));
-            this.panel2.Controls.Add(this.dataGridView1);
-            this.panel2.Location = new System.Drawing.Point(228, 3);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(634, 559);
-            this.panel2.TabIndex = 1;
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.AllowUserToDeleteRows = false;
-            this.dataGridView1.AllowUserToOrderColumns = true;
-            this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(11)))), ((int)(((byte)(97)))));
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgv_ClientesConsulta.AllowUserToAddRows = false;
+            this.dgv_ClientesConsulta.AllowUserToDeleteRows = false;
+            this.dgv_ClientesConsulta.AllowUserToOrderColumns = true;
+            this.dgv_ClientesConsulta.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(11)))), ((int)(((byte)(97)))));
+            this.dgv_ClientesConsulta.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv_ClientesConsulta.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.ID,
             this.Nome,
+            this.Email,
             this.CPF,
-            this.Jogo,
+            this.Celular,
             this.Cidade,
-            this.Data});
-            this.dataGridView1.Location = new System.Drawing.Point(0, -3);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(637, 565);
-            this.dataGridView1.TabIndex = 0;
+            this.CEP});
+            this.dgv_ClientesConsulta.Location = new System.Drawing.Point(228, 3);
+            this.dgv_ClientesConsulta.Name = "dgv_ClientesConsulta";
+            this.dgv_ClientesConsulta.ReadOnly = true;
+            this.dgv_ClientesConsulta.Size = new System.Drawing.Size(687, 559);
+            this.dgv_ClientesConsulta.TabIndex = 0;
             // 
             // ID
             // 
@@ -260,17 +231,23 @@
             this.Nome.ReadOnly = true;
             this.Nome.Width = 150;
             // 
+            // Email
+            // 
+            this.Email.HeaderText = "Email";
+            this.Email.Name = "Email";
+            this.Email.ReadOnly = true;
+            // 
             // CPF
             // 
             this.CPF.HeaderText = "CPF";
             this.CPF.Name = "CPF";
             this.CPF.ReadOnly = true;
             // 
-            // Jogo
+            // Celular
             // 
-            this.Jogo.HeaderText = "Jogo";
-            this.Jogo.Name = "Jogo";
-            this.Jogo.ReadOnly = true;
+            this.Celular.HeaderText = "Celular";
+            this.Celular.Name = "Celular";
+            this.Celular.ReadOnly = true;
             // 
             // Cidade
             // 
@@ -278,28 +255,26 @@
             this.Cidade.Name = "Cidade";
             this.Cidade.ReadOnly = true;
             // 
-            // Data
+            // CEP
             // 
-            this.Data.HeaderText = "Data";
-            this.Data.Name = "Data";
-            this.Data.ReadOnly = true;
-            this.Data.Width = 91;
+            this.CEP.HeaderText = "CEP";
+            this.CEP.Name = "CEP";
+            this.CEP.ReadOnly = true;
             // 
             // ConsultarCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ClientSize = new System.Drawing.Size(866, 565);
-            this.Controls.Add(this.panel2);
+            this.ClientSize = new System.Drawing.Size(920, 565);
+            this.Controls.Add(this.dgv_ClientesConsulta);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "ConsultarCliente";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            this.panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_ClientesConsulta)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -307,27 +282,25 @@
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox Txt_Email;
+        private System.Windows.Forms.TextBox Txt_Nome;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox Txt_CPF;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button bnt_Sair;
         private System.Windows.Forms.Button bnt_Limpar;
         private System.Windows.Forms.Button bnt_Consultar;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.TextBox Txt_Cidade;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.DataGridView dgv_ClientesConsulta;
         private System.Windows.Forms.DataGridViewTextBoxColumn ID;
         private System.Windows.Forms.DataGridViewTextBoxColumn Nome;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Email;
         private System.Windows.Forms.DataGridViewTextBoxColumn CPF;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Jogo;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Celular;
         private System.Windows.Forms.DataGridViewTextBoxColumn Cidade;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Data;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CEP;
     }
 }

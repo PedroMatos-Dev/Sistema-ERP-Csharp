@@ -26,13 +26,12 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.bnt_SalvarAlterar = new System.Windows.Forms.Button();
             this.Btn_Adicionar = new System.Windows.Forms.Button();
             this.Btn_Alterar = new System.Windows.Forms.Button();
             this.Btn_Excluir = new System.Windows.Forms.Button();
             this.Btn_Sair = new System.Windows.Forms.Button();
             this.Btn_Limpar = new System.Windows.Forms.Button();
-            this.Txt_Email = new System.Windows.Forms.TextBox();
-            this.label14 = new System.Windows.Forms.Label();
             this.Grb_Endereco = new System.Windows.Forms.GroupBox();
             this.Txt_Numero = new System.Windows.Forms.TextBox();
             this.Cbo_Estado = new System.Windows.Forms.ComboBox();
@@ -47,6 +46,9 @@
             this.Txt_CEP = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.Grb_DadosPessoais = new System.Windows.Forms.GroupBox();
+            this.Txt_Email = new System.Windows.Forms.TextBox();
+            this.Txt_ID = new System.Windows.Forms.NumericUpDown();
+            this.label14 = new System.Windows.Forms.Label();
             this.Txt_Celular = new System.Windows.Forms.MaskedTextBox();
             this.Txt_CPF = new System.Windows.Forms.MaskedTextBox();
             this.Grb_Sexo = new System.Windows.Forms.GroupBox();
@@ -59,14 +61,13 @@
             this.Txt_Nome = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.Txt_ID = new System.Windows.Forms.NumericUpDown();
-            this.bnt_SalvarAlterar = new System.Windows.Forms.Button();
+            this.bnt_CancelarAlterar = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.Grb_Endereco.SuspendLayout();
             this.Grb_DadosPessoais.SuspendLayout();
-            this.Grb_Sexo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Txt_ID)).BeginInit();
+            this.Grb_Sexo.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -92,6 +93,7 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(11)))), ((int)(((byte)(97)))));
+            this.panel2.Controls.Add(this.bnt_CancelarAlterar);
             this.panel2.Controls.Add(this.bnt_SalvarAlterar);
             this.panel2.Controls.Add(this.Btn_Adicionar);
             this.panel2.Controls.Add(this.Btn_Alterar);
@@ -104,6 +106,18 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(740, 420);
             this.panel2.TabIndex = 1;
+            // 
+            // bnt_SalvarAlterar
+            // 
+            this.bnt_SalvarAlterar.Enabled = false;
+            this.bnt_SalvarAlterar.Location = new System.Drawing.Point(188, 314);
+            this.bnt_SalvarAlterar.Name = "bnt_SalvarAlterar";
+            this.bnt_SalvarAlterar.Size = new System.Drawing.Size(90, 70);
+            this.bnt_SalvarAlterar.TabIndex = 41;
+            this.bnt_SalvarAlterar.Text = "Salvar";
+            this.bnt_SalvarAlterar.UseVisualStyleBackColor = true;
+            this.bnt_SalvarAlterar.Visible = false;
+            this.bnt_SalvarAlterar.Click += new System.EventHandler(this.bnt_SalvarAlterar_Click);
             // 
             // Btn_Adicionar
             // 
@@ -153,22 +167,7 @@
             this.Btn_Limpar.TabIndex = 39;
             this.Btn_Limpar.Text = "&Limpar";
             this.Btn_Limpar.UseVisualStyleBackColor = true;
-            // 
-            // Txt_Email
-            // 
-            this.Txt_Email.Location = new System.Drawing.Point(321, 71);
-            this.Txt_Email.Name = "Txt_Email";
-            this.Txt_Email.Size = new System.Drawing.Size(336, 20);
-            this.Txt_Email.TabIndex = 18;
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(277, 74);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(38, 13);
-            this.label14.TabIndex = 26;
-            this.label14.Text = "E-mail:";
+            this.Btn_Limpar.Click += new System.EventHandler(this.Btn_Limpar_Click);
             // 
             // Grb_Endereco
             // 
@@ -341,6 +340,30 @@
             this.Grb_DadosPessoais.TabStop = false;
             this.Grb_DadosPessoais.Text = "Dados Pessoais";
             // 
+            // Txt_Email
+            // 
+            this.Txt_Email.Location = new System.Drawing.Point(321, 71);
+            this.Txt_Email.Name = "Txt_Email";
+            this.Txt_Email.Size = new System.Drawing.Size(336, 20);
+            this.Txt_Email.TabIndex = 18;
+            // 
+            // Txt_ID
+            // 
+            this.Txt_ID.Location = new System.Drawing.Point(70, 19);
+            this.Txt_ID.Name = "Txt_ID";
+            this.Txt_ID.Size = new System.Drawing.Size(120, 20);
+            this.Txt_ID.TabIndex = 21;
+            this.Txt_ID.ValueChanged += new System.EventHandler(this.Txt_ID_ValueChanged);
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(277, 74);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(38, 13);
+            this.label14.TabIndex = 26;
+            this.label14.Text = "E-mail:";
+            // 
             // Txt_Celular
             // 
             this.Txt_Celular.Location = new System.Drawing.Point(70, 99);
@@ -450,25 +473,17 @@
             this.label2.TabIndex = 0;
             this.label2.Text = "ID:";
             // 
-            // Txt_ID
+            // bnt_CancelarAlterar
             // 
-            this.Txt_ID.Location = new System.Drawing.Point(70, 19);
-            this.Txt_ID.Name = "Txt_ID";
-            this.Txt_ID.Size = new System.Drawing.Size(120, 20);
-            this.Txt_ID.TabIndex = 21;
-            this.Txt_ID.ValueChanged += new System.EventHandler(this.Txt_ID_ValueChanged);
-            // 
-            // bnt_SalvarAlterar
-            // 
-            this.bnt_SalvarAlterar.Enabled = false;
-            this.bnt_SalvarAlterar.Location = new System.Drawing.Point(188, 314);
-            this.bnt_SalvarAlterar.Name = "bnt_SalvarAlterar";
-            this.bnt_SalvarAlterar.Size = new System.Drawing.Size(90, 70);
-            this.bnt_SalvarAlterar.TabIndex = 41;
-            this.bnt_SalvarAlterar.Text = "Salvar";
-            this.bnt_SalvarAlterar.UseVisualStyleBackColor = true;
-            this.bnt_SalvarAlterar.Visible = false;
-            this.bnt_SalvarAlterar.Click += new System.EventHandler(this.bnt_SalvarAlterar_Click);
+            this.bnt_CancelarAlterar.Enabled = false;
+            this.bnt_CancelarAlterar.Location = new System.Drawing.Point(62, 314);
+            this.bnt_CancelarAlterar.Name = "bnt_CancelarAlterar";
+            this.bnt_CancelarAlterar.Size = new System.Drawing.Size(90, 70);
+            this.bnt_CancelarAlterar.TabIndex = 42;
+            this.bnt_CancelarAlterar.Text = "Cancelar";
+            this.bnt_CancelarAlterar.UseVisualStyleBackColor = true;
+            this.bnt_CancelarAlterar.Visible = false;
+            this.bnt_CancelarAlterar.Click += new System.EventHandler(this.bnt_CancelarAlterar_Click);
             // 
             // AddCliente
             // 
@@ -488,9 +503,9 @@
             this.Grb_Endereco.PerformLayout();
             this.Grb_DadosPessoais.ResumeLayout(false);
             this.Grb_DadosPessoais.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Txt_ID)).EndInit();
             this.Grb_Sexo.ResumeLayout(false);
             this.Grb_Sexo.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.Txt_ID)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -535,5 +550,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.NumericUpDown Txt_ID;
         private System.Windows.Forms.Button bnt_SalvarAlterar;
+        private System.Windows.Forms.Button bnt_CancelarAlterar;
     }
 }

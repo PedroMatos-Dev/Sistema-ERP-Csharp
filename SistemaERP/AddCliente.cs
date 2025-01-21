@@ -235,7 +235,6 @@ namespace SistemaERP {
             }
         }
 
-
         void MostrarDados() {
             try {
                 // Abre a conexão com o banco
@@ -243,7 +242,7 @@ namespace SistemaERP {
                     connection.Open();
 
                     // Consulta SQL para buscar pelo ID
-                    string query = "SELECT * FROM clientes WHERE id_cliente = @id";
+                    string query = "SELECT * FROM clientes WHERE id_cliente = @id AND delete_data IS NULL";
 
                     using (SqlCommand command = new SqlCommand(query, connection)) {
                         // Define o parâmetro como inteiro
@@ -292,7 +291,6 @@ namespace SistemaERP {
             }
         }
 
-        // Método para limpar os campos do formulário
         void LimparCampos() {
             Txt_Nome.Text = "";
             Txt_CPF.Text = "";
@@ -343,6 +341,9 @@ namespace SistemaERP {
 
         private void Btn_Alterar_Click(object sender, EventArgs e) {
             HabilitaEdicao();
+
+            bnt_CancelarAlterar.Visible = true;
+            bnt_CancelarAlterar.Enabled = true;
 
             bnt_SalvarAlterar.Visible = true;
             bnt_SalvarAlterar.Enabled = true;
@@ -419,9 +420,10 @@ namespace SistemaERP {
                     MessageBox.Show("Erro: " + ex.Message, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
-
+            DesabilitaEdicao();
             bnt_SalvarAlterar.Visible = false;
             bnt_SalvarAlterar.Enabled = false;
+
         }
 
         private void Btn_Excluir_Click(object sender, EventArgs e) {
@@ -466,6 +468,21 @@ namespace SistemaERP {
                 MessageBox.Show("Erro: " + ex.Message, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
+        }
+
+        private void bnt_CancelarAlterar_Click(object sender, EventArgs e) {
+            DesabilitaEdicao();
+
+            bnt_CancelarAlterar.Visible = false;
+            bnt_CancelarAlterar.Enabled = false;
+
+            bnt_SalvarAlterar.Visible = false;
+            bnt_SalvarAlterar.Enabled = false;
+
+        }
+
+        private void Btn_Limpar_Click(object sender, EventArgs e) {
+            LimparCampos();
         }
     }
 }
