@@ -16,3 +16,4 @@ C:\Programação\C#\SistemaERP\SistemaERP\obj\Debug\SistemaERP.Dashbord.resource
 C:\Programação\C#\SistemaERP\SistemaERP\obj\Debug\SistemaERP.Estoque.resources
 C:\Programação\C#\SistemaERP\SistemaERP\obj\Debug\SistemaERP.AddCliente.resources
 C:\Programação\C#\SistemaERP\SistemaERP\obj\Debug\SistemaERP.ConsultarCliente.resources
+C:\Programação\C#\SistemaERP\SistemaERP\obj\Debug\SistemaERP.ConsultarVenda.resources
