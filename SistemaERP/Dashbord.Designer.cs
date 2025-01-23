@@ -44,7 +44,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(11)))), ((int)(((byte)(97)))));
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(68)))), ((int)(((byte)(89)))));
             this.panel1.Controls.Add(this.bnt_ConsultarVenda);
             this.panel1.Controls.Add(this.bnt_GerarRelatorio);
             this.panel1.Location = new System.Drawing.Point(3, 465);
@@ -54,9 +54,9 @@
             // 
             // bnt_ConsultarVenda
             // 
-            this.bnt_ConsultarVenda.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(11)))), ((int)(((byte)(97)))));
-            this.bnt_ConsultarVenda.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(8)))), ((int)(((byte)(135)))));
-            this.bnt_ConsultarVenda.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(8)))), ((int)(((byte)(135)))));
+            this.bnt_ConsultarVenda.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(68)))), ((int)(((byte)(89)))));
+            this.bnt_ConsultarVenda.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(96)))), ((int)(((byte)(140)))));
+            this.bnt_ConsultarVenda.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(96)))), ((int)(((byte)(140)))));
             this.bnt_ConsultarVenda.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bnt_ConsultarVenda.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bnt_ConsultarVenda.ForeColor = System.Drawing.Color.White;
@@ -70,9 +70,11 @@
             // 
             // bnt_GerarRelatorio
             // 
-            this.bnt_GerarRelatorio.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(11)))), ((int)(((byte)(97)))));
-            this.bnt_GerarRelatorio.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(8)))), ((int)(((byte)(135)))));
-            this.bnt_GerarRelatorio.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(8)))), ((int)(((byte)(135)))));
+            this.bnt_GerarRelatorio.AutoSize = true;
+            this.bnt_GerarRelatorio.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(68)))), ((int)(((byte)(89)))));
+            this.bnt_GerarRelatorio.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.bnt_GerarRelatorio.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(96)))), ((int)(((byte)(140)))));
+            this.bnt_GerarRelatorio.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(96)))), ((int)(((byte)(140)))));
             this.bnt_GerarRelatorio.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bnt_GerarRelatorio.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bnt_GerarRelatorio.ForeColor = System.Drawing.Color.White;
@@ -89,7 +91,7 @@
             this.dgv_VendasRelatorio.AllowUserToAddRows = false;
             this.dgv_VendasRelatorio.AllowUserToDeleteRows = false;
             this.dgv_VendasRelatorio.AllowUserToOrderColumns = true;
-            this.dgv_VendasRelatorio.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(11)))), ((int)(((byte)(97)))));
+            this.dgv_VendasRelatorio.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(68)))), ((int)(((byte)(89)))));
             this.dgv_VendasRelatorio.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv_VendasRelatorio.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.ID,
@@ -194,6 +196,7 @@
             this.Name = "Dashbord";
             this.Size = new System.Drawing.Size(865, 565);
             this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_VendasRelatorio)).EndInit();
             this.ResumeLayout(false);
 

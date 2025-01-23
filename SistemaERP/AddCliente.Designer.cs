@@ -26,6 +26,7 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.bnt_CancelarAlterar = new System.Windows.Forms.Button();
             this.bnt_SalvarAlterar = new System.Windows.Forms.Button();
             this.Btn_Adicionar = new System.Windows.Forms.Button();
             this.Btn_Alterar = new System.Windows.Forms.Button();
@@ -61,7 +62,6 @@
             this.Txt_Nome = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.bnt_CancelarAlterar = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.Grb_Endereco.SuspendLayout();
@@ -72,7 +72,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(11)))), ((int)(((byte)(97)))));
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(68)))), ((int)(((byte)(89)))));
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(3, 3);
             this.panel1.Name = "panel1";
@@ -92,7 +92,7 @@
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(11)))), ((int)(((byte)(97)))));
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(68)))), ((int)(((byte)(89)))));
             this.panel2.Controls.Add(this.bnt_CancelarAlterar);
             this.panel2.Controls.Add(this.bnt_SalvarAlterar);
             this.panel2.Controls.Add(this.Btn_Adicionar);
@@ -107,9 +107,31 @@
             this.panel2.Size = new System.Drawing.Size(740, 420);
             this.panel2.TabIndex = 1;
             // 
+            // bnt_CancelarAlterar
+            // 
+            this.bnt_CancelarAlterar.Enabled = false;
+            this.bnt_CancelarAlterar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(96)))), ((int)(((byte)(140)))));
+            this.bnt_CancelarAlterar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(96)))), ((int)(((byte)(140)))));
+            this.bnt_CancelarAlterar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bnt_CancelarAlterar.Font = new System.Drawing.Font("Tahoma", 12F);
+            this.bnt_CancelarAlterar.ForeColor = System.Drawing.Color.White;
+            this.bnt_CancelarAlterar.Location = new System.Drawing.Point(62, 314);
+            this.bnt_CancelarAlterar.Name = "bnt_CancelarAlterar";
+            this.bnt_CancelarAlterar.Size = new System.Drawing.Size(90, 70);
+            this.bnt_CancelarAlterar.TabIndex = 42;
+            this.bnt_CancelarAlterar.Text = "Cancelar";
+            this.bnt_CancelarAlterar.UseVisualStyleBackColor = true;
+            this.bnt_CancelarAlterar.Visible = false;
+            this.bnt_CancelarAlterar.Click += new System.EventHandler(this.bnt_CancelarAlterar_Click);
+            // 
             // bnt_SalvarAlterar
             // 
             this.bnt_SalvarAlterar.Enabled = false;
+            this.bnt_SalvarAlterar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(96)))), ((int)(((byte)(140)))));
+            this.bnt_SalvarAlterar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(96)))), ((int)(((byte)(140)))));
+            this.bnt_SalvarAlterar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bnt_SalvarAlterar.Font = new System.Drawing.Font("Tahoma", 12F);
+            this.bnt_SalvarAlterar.ForeColor = System.Drawing.Color.White;
             this.bnt_SalvarAlterar.Location = new System.Drawing.Point(188, 314);
             this.bnt_SalvarAlterar.Name = "bnt_SalvarAlterar";
             this.bnt_SalvarAlterar.Size = new System.Drawing.Size(90, 70);
@@ -121,6 +143,11 @@
             // 
             // Btn_Adicionar
             // 
+            this.Btn_Adicionar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(8)))), ((int)(((byte)(135)))));
+            this.Btn_Adicionar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(8)))), ((int)(((byte)(135)))));
+            this.Btn_Adicionar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btn_Adicionar.Font = new System.Drawing.Font("Tahoma", 12F);
+            this.Btn_Adicionar.ForeColor = System.Drawing.Color.White;
             this.Btn_Adicionar.Location = new System.Drawing.Point(62, 314);
             this.Btn_Adicionar.Name = "Btn_Adicionar";
             this.Btn_Adicionar.Size = new System.Drawing.Size(90, 70);
@@ -131,6 +158,11 @@
             // 
             // Btn_Alterar
             // 
+            this.Btn_Alterar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(8)))), ((int)(((byte)(135)))));
+            this.Btn_Alterar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(8)))), ((int)(((byte)(135)))));
+            this.Btn_Alterar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btn_Alterar.Font = new System.Drawing.Font("Tahoma", 12F);
+            this.Btn_Alterar.ForeColor = System.Drawing.Color.White;
             this.Btn_Alterar.Location = new System.Drawing.Point(188, 314);
             this.Btn_Alterar.Name = "Btn_Alterar";
             this.Btn_Alterar.Size = new System.Drawing.Size(90, 70);
@@ -141,6 +173,11 @@
             // 
             // Btn_Excluir
             // 
+            this.Btn_Excluir.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(96)))), ((int)(((byte)(140)))));
+            this.Btn_Excluir.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(96)))), ((int)(((byte)(140)))));
+            this.Btn_Excluir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btn_Excluir.Font = new System.Drawing.Font("Tahoma", 12F);
+            this.Btn_Excluir.ForeColor = System.Drawing.Color.White;
             this.Btn_Excluir.Location = new System.Drawing.Point(315, 314);
             this.Btn_Excluir.Name = "Btn_Excluir";
             this.Btn_Excluir.Size = new System.Drawing.Size(90, 70);
@@ -151,6 +188,11 @@
             // 
             // Btn_Sair
             // 
+            this.Btn_Sair.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(96)))), ((int)(((byte)(140)))));
+            this.Btn_Sair.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(96)))), ((int)(((byte)(140)))));
+            this.Btn_Sair.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btn_Sair.Font = new System.Drawing.Font("Tahoma", 12F);
+            this.Btn_Sair.ForeColor = System.Drawing.Color.White;
             this.Btn_Sair.Location = new System.Drawing.Point(577, 314);
             this.Btn_Sair.Name = "Btn_Sair";
             this.Btn_Sair.Size = new System.Drawing.Size(90, 70);
@@ -161,6 +203,11 @@
             // 
             // Btn_Limpar
             // 
+            this.Btn_Limpar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(96)))), ((int)(((byte)(140)))));
+            this.Btn_Limpar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(96)))), ((int)(((byte)(140)))));
+            this.Btn_Limpar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btn_Limpar.Font = new System.Drawing.Font("Tahoma", 12F);
+            this.Btn_Limpar.ForeColor = System.Drawing.Color.White;
             this.Btn_Limpar.Location = new System.Drawing.Point(445, 314);
             this.Btn_Limpar.Name = "Btn_Limpar";
             this.Btn_Limpar.Size = new System.Drawing.Size(90, 70);
@@ -171,6 +218,7 @@
             // 
             // Grb_Endereco
             // 
+            this.Grb_Endereco.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(68)))), ((int)(((byte)(89)))));
             this.Grb_Endereco.Controls.Add(this.Txt_Numero);
             this.Grb_Endereco.Controls.Add(this.Cbo_Estado);
             this.Grb_Endereco.Controls.Add(this.label13);
@@ -319,6 +367,7 @@
             // 
             // Grb_DadosPessoais
             // 
+            this.Grb_DadosPessoais.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(68)))), ((int)(((byte)(89)))));
             this.Grb_DadosPessoais.Controls.Add(this.Txt_Email);
             this.Grb_DadosPessoais.Controls.Add(this.Txt_ID);
             this.Grb_DadosPessoais.Controls.Add(this.label14);
@@ -472,18 +521,6 @@
             this.label2.Size = new System.Drawing.Size(21, 13);
             this.label2.TabIndex = 0;
             this.label2.Text = "ID:";
-            // 
-            // bnt_CancelarAlterar
-            // 
-            this.bnt_CancelarAlterar.Enabled = false;
-            this.bnt_CancelarAlterar.Location = new System.Drawing.Point(62, 314);
-            this.bnt_CancelarAlterar.Name = "bnt_CancelarAlterar";
-            this.bnt_CancelarAlterar.Size = new System.Drawing.Size(90, 70);
-            this.bnt_CancelarAlterar.TabIndex = 42;
-            this.bnt_CancelarAlterar.Text = "Cancelar";
-            this.bnt_CancelarAlterar.UseVisualStyleBackColor = true;
-            this.bnt_CancelarAlterar.Visible = false;
-            this.bnt_CancelarAlterar.Click += new System.EventHandler(this.bnt_CancelarAlterar_Click);
             // 
             // AddCliente
             // 

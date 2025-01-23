@@ -45,27 +45,27 @@
             this.cb_ShowPassRegister.AutoSize = true;
             this.cb_ShowPassRegister.Location = new System.Drawing.Point(438, 260);
             this.cb_ShowPassRegister.Name = "cb_ShowPassRegister";
-            this.cb_ShowPassRegister.Size = new System.Drawing.Size(102, 17);
+            this.cb_ShowPassRegister.Size = new System.Drawing.Size(93, 17);
             this.cb_ShowPassRegister.TabIndex = 16;
-            this.cb_ShowPassRegister.Text = "Show Password";
+            this.cb_ShowPassRegister.Text = "Mostrar senha";
             this.cb_ShowPassRegister.UseVisualStyleBackColor = true;
             this.cb_ShowPassRegister.CheckedChanged += new System.EventHandler(this.checkBox_ShowPassword_CheckedChanged);
             // 
             // btn_Login
             // 
-            this.btn_Login.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(11)))), ((int)(((byte)(97)))));
+            this.btn_Login.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(68)))), ((int)(((byte)(89)))));
             this.btn_Login.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_Login.FlatAppearance.BorderSize = 0;
-            this.btn_Login.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(11)))), ((int)(((byte)(97)))));
-            this.btn_Login.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(11)))), ((int)(((byte)(97)))));
+            this.btn_Login.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(68)))), ((int)(((byte)(89)))));
+            this.btn_Login.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(68)))), ((int)(((byte)(89)))));
             this.btn_Login.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Login.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Login.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btn_Login.Location = new System.Drawing.Point(300, 293);
             this.btn_Login.Name = "btn_Login";
-            this.btn_Login.Size = new System.Drawing.Size(89, 34);
+            this.btn_Login.Size = new System.Drawing.Size(106, 34);
             this.btn_Login.TabIndex = 15;
-            this.btn_Login.Text = "SIGNUP";
+            this.btn_Login.Text = "INSCREVER-SE";
             this.btn_Login.UseVisualStyleBackColor = false;
             this.btn_Login.Click += new System.EventHandler(this.btn_Login_Click);
             // 
@@ -85,9 +85,9 @@
             this.TxtLab_Password.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtLab_Password.Location = new System.Drawing.Point(297, 205);
             this.TxtLab_Password.Name = "TxtLab_Password";
-            this.TxtLab_Password.Size = new System.Drawing.Size(67, 16);
+            this.TxtLab_Password.Size = new System.Drawing.Size(48, 16);
             this.TxtLab_Password.TabIndex = 13;
-            this.TxtLab_Password.Text = "Password:";
+            this.TxtLab_Password.Text = "Senha:";
             // 
             // TxtBox_NameRegister
             // 
@@ -104,9 +104,9 @@
             this.TxtLab_Username.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtLab_Username.Location = new System.Drawing.Point(297, 145);
             this.TxtLab_Username.Name = "TxtLab_Username";
-            this.TxtLab_Username.Size = new System.Drawing.Size(70, 16);
+            this.TxtLab_Username.Size = new System.Drawing.Size(109, 16);
             this.TxtLab_Username.TabIndex = 11;
-            this.TxtLab_Username.Text = "Username:";
+            this.TxtLab_Username.Text = "Nome de usuário:";
             // 
             // TxtLab_LoginAccount
             // 
@@ -114,9 +114,9 @@
             this.TxtLab_LoginAccount.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtLab_LoginAccount.Location = new System.Drawing.Point(346, 79);
             this.TxtLab_LoginAccount.Name = "TxtLab_LoginAccount";
-            this.TxtLab_LoginAccount.Size = new System.Drawing.Size(141, 23);
+            this.TxtLab_LoginAccount.Size = new System.Drawing.Size(128, 23);
             this.TxtLab_LoginAccount.TabIndex = 10;
-            this.TxtLab_LoginAccount.Text = "Register Account";
+            this.TxtLab_LoginAccount.Text = "Registrar Conta";
             // 
             // TxtLab_Exit
             // 
@@ -132,7 +132,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(11)))), ((int)(((byte)(97)))));
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(68)))), ((int)(((byte)(89)))));
             this.panel1.Controls.Add(this.picture_Sales);
             this.panel1.Controls.Add(this.TxtLab_SalesSystem);
             this.panel1.Controls.Add(this.btn_SignIn);
@@ -159,9 +159,9 @@
             this.TxtLab_SalesSystem.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.TxtLab_SalesSystem.Location = new System.Drawing.Point(25, 172);
             this.TxtLab_SalesSystem.Name = "TxtLab_SalesSystem";
-            this.TxtLab_SalesSystem.Size = new System.Drawing.Size(213, 23);
+            this.TxtLab_SalesSystem.Size = new System.Drawing.Size(215, 23);
             this.TxtLab_SalesSystem.TabIndex = 2;
-            this.TxtLab_SalesSystem.Text = "Sales Management System";
+            this.TxtLab_SalesSystem.Text = "Sistema de Venda de jogos";
             // 
             // btn_SignIn
             // 
@@ -172,12 +172,12 @@
             this.btn_SignIn.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btn_SignIn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_SignIn.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_SignIn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(11)))), ((int)(((byte)(97)))));
+            this.btn_SignIn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(68)))), ((int)(((byte)(89)))));
             this.btn_SignIn.Location = new System.Drawing.Point(29, 293);
             this.btn_SignIn.Name = "btn_SignIn";
             this.btn_SignIn.Size = new System.Drawing.Size(191, 34);
             this.btn_SignIn.TabIndex = 1;
-            this.btn_SignIn.Text = "SIGN IN";
+            this.btn_SignIn.Text = "ENTRAR";
             this.btn_SignIn.UseVisualStyleBackColor = false;
             this.btn_SignIn.Click += new System.EventHandler(this.btn_SignIn_Click);
             // 
@@ -186,11 +186,11 @@
             this.TxtLab_RegisterAccount.AutoSize = true;
             this.TxtLab_RegisterAccount.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtLab_RegisterAccount.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.TxtLab_RegisterAccount.Location = new System.Drawing.Point(65, 261);
+            this.TxtLab_RegisterAccount.Location = new System.Drawing.Point(52, 261);
             this.TxtLab_RegisterAccount.Name = "TxtLab_RegisterAccount";
-            this.TxtLab_RegisterAccount.Size = new System.Drawing.Size(115, 16);
+            this.TxtLab_RegisterAccount.Size = new System.Drawing.Size(142, 16);
             this.TxtLab_RegisterAccount.TabIndex = 0;
-            this.TxtLab_RegisterAccount.Text = "Login your Account";
+            this.TxtLab_RegisterAccount.Text = "Faça login na sua conta";
             // 
             // RegisterForms
             // 

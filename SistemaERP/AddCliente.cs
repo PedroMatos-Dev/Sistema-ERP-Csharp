@@ -43,7 +43,7 @@ namespace SistemaERP {
                         // Tenta converter o id_cliente para um número inteiro
                         if (int.TryParse(lastIdCliente, out lastIdNumber)) {
                             // Configura o valor do NumericUpDown como o próximo id_cliente
-                            Txt_ID.Value = lastIdNumber + 2;
+                            Txt_ID.Value = lastIdNumber;
                         }
                         else {
                             // Se o id_cliente não for um número válido, define 1
@@ -64,7 +64,7 @@ namespace SistemaERP {
 
         public AddCliente() {
             InitializeComponent();
-            Form1_Load(); 
+            Form1_Load();
         }
 
         private void Txt_ID_ValueChanged(object sender, EventArgs e) {
@@ -118,32 +118,32 @@ namespace SistemaERP {
                                     "longadouro, numero, bairro, cidade, estado, email, insert_date)" +
                                     "VALUES(@id_cliente, @nome, @cpf, @celular, @telAlt, @sexo, @cep," +
                                     "@longadouro, @numero, @bairro, @cidade, @estado, @email, @insertDate)";
-                                
-                                 using (SqlCommand cmd = new SqlCommand(insertData, connection)) {
 
-                                            cmd.Parameters.AddWithValue("@id_cliente", Convert.ToInt32(Txt_ID.Value));
-                                            cmd.Parameters.AddWithValue("@nome", Txt_Nome.Text.Trim());
-                                            cmd.Parameters.AddWithValue("@cpf", Txt_CPF.Text.Replace(".", "").Replace("-", ""));
-                                            cmd.Parameters.AddWithValue("@celular", Txt_Celular.Text.Replace("(", "").Replace(")", "").Replace("-", "").Replace(" ", ""));
-                                            cmd.Parameters.AddWithValue("@telAlt", Txt_TelAlt.Text.Trim());
+                                using (SqlCommand cmd = new SqlCommand(insertData, connection)) {
 
-                                            var sexo = Rdo_Masculino.Checked ? "masculino" : "feminino";
-                                            cmd.Parameters.AddWithValue("@sexo", sexo);
+                                    cmd.Parameters.AddWithValue("@id_cliente", Convert.ToInt32(Txt_ID.Value));
+                                    cmd.Parameters.AddWithValue("@nome", Txt_Nome.Text.Trim());
+                                    cmd.Parameters.AddWithValue("@cpf", Txt_CPF.Text.Replace(".", "").Replace("-", ""));
+                                    cmd.Parameters.AddWithValue("@celular", Txt_Celular.Text.Replace("(", "").Replace(")", "").Replace("-", "").Replace(" ", ""));
+                                    cmd.Parameters.AddWithValue("@telAlt", Txt_TelAlt.Text.Trim());
 
-                                            cmd.Parameters.AddWithValue("@cep", Txt_CEP.Text.Trim());
-                                            cmd.Parameters.AddWithValue("@longadouro", Txt_Longadouro.Text.Trim());
-                                            cmd.Parameters.AddWithValue("@numero", Txt_Numero.Text.Trim());
-                                            cmd.Parameters.AddWithValue("@bairro", Txt_Bairro.Text.Trim());
-                                            cmd.Parameters.AddWithValue("@cidade", Txt_Cidade.Text.Trim());
-                                            cmd.Parameters.AddWithValue("@estado", Cbo_Estado.Text.Trim());
-                                            cmd.Parameters.AddWithValue("@email", Txt_Email.Text.Trim());
-                                            cmd.Parameters.AddWithValue("@insertDate", today);
+                                    var sexo = Rdo_Masculino.Checked ? "masculino" : "feminino";
+                                    cmd.Parameters.AddWithValue("@sexo", sexo);
 
-                                            cmd.ExecuteNonQuery();
+                                    cmd.Parameters.AddWithValue("@cep", Txt_CEP.Text.Trim());
+                                    cmd.Parameters.AddWithValue("@longadouro", Txt_Longadouro.Text.Trim());
+                                    cmd.Parameters.AddWithValue("@numero", Txt_Numero.Text.Trim());
+                                    cmd.Parameters.AddWithValue("@bairro", Txt_Bairro.Text.Trim());
+                                    cmd.Parameters.AddWithValue("@cidade", Txt_Cidade.Text.Trim());
+                                    cmd.Parameters.AddWithValue("@estado", Cbo_Estado.Text.Trim());
+                                    cmd.Parameters.AddWithValue("@email", Txt_Email.Text.Trim());
+                                    cmd.Parameters.AddWithValue("@insertDate", today);
 
-                                            MessageBox.Show("Sucesso! Dados salvos.",
-                                                            "Information Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                                 }
+                                    cmd.ExecuteNonQuery();
+
+                                    MessageBox.Show("Sucesso! Dados salvos.",
+                                                    "Information Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                                }
                             }
                         }
                     }
@@ -156,6 +156,7 @@ namespace SistemaERP {
                 }
             }
             LimparCampos();
+            Form1_Load();
         }
 
         private bool VerificarCamposPreenchidos() {
@@ -250,7 +251,9 @@ namespace SistemaERP {
 
                         using (SqlDataReader reader = command.ExecuteReader()) {
 
-                            MessageBox.Show($"Query: {query}, ID: {Txt_ID.Value}");
+
+                            //Mensagem para mostra qual id esta sendo selecionando no DB
+                            //MessageBox.Show($"Query: {query}, ID: {Txt_ID.Value}");
 
                             if (reader.Read()) { // Verifica se encontrou dados
                                                  // Preenche os campos com os valores do banco
@@ -277,7 +280,8 @@ namespace SistemaERP {
 
                             }
                             else {
-                                MessageBox.Show("ID não encontrado.", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                                //Messagem para falar se o id existe ou não
+                                //MessageBox.Show("ID não encontrado.", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                                 LimparCampos(); // Limpa os campos se não houver dados
 
                                 HabilitaEdicao();
@@ -424,6 +428,8 @@ namespace SistemaERP {
             bnt_SalvarAlterar.Visible = false;
             bnt_SalvarAlterar.Enabled = false;
 
+          
+
         }
 
         private void Btn_Excluir_Click(object sender, EventArgs e) {
@@ -484,5 +490,6 @@ namespace SistemaERP {
         private void Btn_Limpar_Click(object sender, EventArgs e) {
             LimparCampos();
         }
+
     }
 }

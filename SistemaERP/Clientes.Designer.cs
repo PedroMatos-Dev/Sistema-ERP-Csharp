@@ -25,13 +25,6 @@
         private void InitializeComponent() {
             this.panel2 = new System.Windows.Forms.Panel();
             this.dvg_TodosClientes = new System.Windows.Forms.DataGridView();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.bnt_ConsultarCliente = new System.Windows.Forms.Button();
-            this.bnt_AddCliente = new System.Windows.Forms.Button();
-            this.pnl_TotalCliente = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.lb_TotalClientes = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
             this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Nome = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CPF = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -41,17 +34,25 @@
             this.Endereço = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CEP = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Data = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.bnt_GerarRelatorio = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.lb_ClientesAtivo = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.bnt_ConsultarCliente = new System.Windows.Forms.Button();
+            this.bnt_AddCliente = new System.Windows.Forms.Button();
+            this.pnl_TotalCliente = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.lb_TotalClientes = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dvg_TodosClientes)).BeginInit();
             this.panel1.SuspendLayout();
-            this.pnl_TotalCliente.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.pnl_TotalCliente.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel2
@@ -68,7 +69,7 @@
             this.dvg_TodosClientes.AllowUserToAddRows = false;
             this.dvg_TodosClientes.AllowUserToDeleteRows = false;
             this.dvg_TodosClientes.AllowUserToOrderColumns = true;
-            this.dvg_TodosClientes.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(11)))), ((int)(((byte)(97)))));
+            this.dvg_TodosClientes.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(68)))), ((int)(((byte)(89)))));
             this.dvg_TodosClientes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dvg_TodosClientes.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.ID,
@@ -85,95 +86,6 @@
             this.dvg_TodosClientes.ReadOnly = true;
             this.dvg_TodosClientes.Size = new System.Drawing.Size(838, 412);
             this.dvg_TodosClientes.TabIndex = 0;
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.panel1.Controls.Add(this.panel3);
-            this.panel1.Controls.Add(this.bnt_ConsultarCliente);
-            this.panel1.Controls.Add(this.bnt_AddCliente);
-            this.panel1.Controls.Add(this.pnl_TotalCliente);
-            this.panel1.Location = new System.Drawing.Point(13, 14);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(838, 103);
-            this.panel1.TabIndex = 2;
-            // 
-            // bnt_ConsultarCliente
-            // 
-            this.bnt_ConsultarCliente.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(11)))), ((int)(((byte)(97)))));
-            this.bnt_ConsultarCliente.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bnt_ConsultarCliente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bnt_ConsultarCliente.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bnt_ConsultarCliente.ForeColor = System.Drawing.Color.White;
-            this.bnt_ConsultarCliente.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.bnt_ConsultarCliente.Location = new System.Drawing.Point(659, 12);
-            this.bnt_ConsultarCliente.Name = "bnt_ConsultarCliente";
-            this.bnt_ConsultarCliente.Size = new System.Drawing.Size(148, 78);
-            this.bnt_ConsultarCliente.TabIndex = 3;
-            this.bnt_ConsultarCliente.Text = "Consultar Cliente";
-            this.bnt_ConsultarCliente.UseVisualStyleBackColor = false;
-            this.bnt_ConsultarCliente.Click += new System.EventHandler(this.bnt_ConsultarCliente_Click);
-            // 
-            // bnt_AddCliente
-            // 
-            this.bnt_AddCliente.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(11)))), ((int)(((byte)(97)))));
-            this.bnt_AddCliente.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bnt_AddCliente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bnt_AddCliente.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bnt_AddCliente.ForeColor = System.Drawing.Color.White;
-            this.bnt_AddCliente.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.bnt_AddCliente.Location = new System.Drawing.Point(454, 12);
-            this.bnt_AddCliente.Name = "bnt_AddCliente";
-            this.bnt_AddCliente.Size = new System.Drawing.Size(148, 78);
-            this.bnt_AddCliente.TabIndex = 2;
-            this.bnt_AddCliente.Text = "Adicionar Cliente";
-            this.bnt_AddCliente.UseVisualStyleBackColor = false;
-            this.bnt_AddCliente.Click += new System.EventHandler(this.bnt_AddCliente_Click);
-            // 
-            // pnl_TotalCliente
-            // 
-            this.pnl_TotalCliente.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(11)))), ((int)(((byte)(97)))));
-            this.pnl_TotalCliente.Controls.Add(this.pictureBox1);
-            this.pnl_TotalCliente.Controls.Add(this.lb_TotalClientes);
-            this.pnl_TotalCliente.Controls.Add(this.label1);
-            this.pnl_TotalCliente.Location = new System.Drawing.Point(28, 12);
-            this.pnl_TotalCliente.Name = "pnl_TotalCliente";
-            this.pnl_TotalCliente.Size = new System.Drawing.Size(148, 78);
-            this.pnl_TotalCliente.TabIndex = 0;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox1.Image = global::SistemaERP.Properties.Resources.customers;
-            this.pictureBox1.Location = new System.Drawing.Point(3, 15);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(52, 52);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox1.TabIndex = 2;
-            this.pictureBox1.TabStop = false;
-            // 
-            // lb_TotalClientes
-            // 
-            this.lb_TotalClientes.AutoSize = true;
-            this.lb_TotalClientes.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_TotalClientes.ForeColor = System.Drawing.Color.White;
-            this.lb_TotalClientes.Location = new System.Drawing.Point(89, 15);
-            this.lb_TotalClientes.Name = "lb_TotalClientes";
-            this.lb_TotalClientes.Size = new System.Drawing.Size(18, 19);
-            this.lb_TotalClientes.TabIndex = 1;
-            this.lb_TotalClientes.Text = "0";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(59, 49);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(85, 16);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Total Clientes";
             // 
             // ID
             // 
@@ -237,9 +149,38 @@
             this.Data.ReadOnly = true;
             this.Data.Width = 70;
             // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(68)))), ((int)(((byte)(89)))));
+            this.panel1.Controls.Add(this.bnt_GerarRelatorio);
+            this.panel1.Controls.Add(this.panel3);
+            this.panel1.Controls.Add(this.bnt_ConsultarCliente);
+            this.panel1.Controls.Add(this.bnt_AddCliente);
+            this.panel1.Controls.Add(this.pnl_TotalCliente);
+            this.panel1.Location = new System.Drawing.Point(13, 14);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(838, 103);
+            this.panel1.TabIndex = 2;
+            // 
+            // bnt_GerarRelatorio
+            // 
+            this.bnt_GerarRelatorio.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(96)))), ((int)(((byte)(140)))));
+            this.bnt_GerarRelatorio.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bnt_GerarRelatorio.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bnt_GerarRelatorio.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bnt_GerarRelatorio.ForeColor = System.Drawing.Color.White;
+            this.bnt_GerarRelatorio.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.bnt_GerarRelatorio.Location = new System.Drawing.Point(702, 27);
+            this.bnt_GerarRelatorio.Name = "bnt_GerarRelatorio";
+            this.bnt_GerarRelatorio.Size = new System.Drawing.Size(113, 63);
+            this.bnt_GerarRelatorio.TabIndex = 4;
+            this.bnt_GerarRelatorio.Text = "Gerar Relatorio";
+            this.bnt_GerarRelatorio.UseVisualStyleBackColor = false;
+            this.bnt_GerarRelatorio.Click += new System.EventHandler(this.bnt_GerarRelatorio_Click);
+            // 
             // panel3
             // 
-            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(11)))), ((int)(((byte)(97)))));
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(68)))), ((int)(((byte)(89)))));
             this.panel3.Controls.Add(this.pictureBox2);
             this.panel3.Controls.Add(this.lb_ClientesAtivo);
             this.panel3.Controls.Add(this.label4);
@@ -282,11 +223,88 @@
             this.label4.TabIndex = 0;
             this.label4.Text = "Clientes Ativos";
             // 
+            // bnt_ConsultarCliente
+            // 
+            this.bnt_ConsultarCliente.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(96)))), ((int)(((byte)(140)))));
+            this.bnt_ConsultarCliente.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bnt_ConsultarCliente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bnt_ConsultarCliente.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bnt_ConsultarCliente.ForeColor = System.Drawing.Color.White;
+            this.bnt_ConsultarCliente.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.bnt_ConsultarCliente.Location = new System.Drawing.Point(573, 27);
+            this.bnt_ConsultarCliente.Name = "bnt_ConsultarCliente";
+            this.bnt_ConsultarCliente.Size = new System.Drawing.Size(113, 63);
+            this.bnt_ConsultarCliente.TabIndex = 3;
+            this.bnt_ConsultarCliente.Text = "Consultar Cliente";
+            this.bnt_ConsultarCliente.UseVisualStyleBackColor = false;
+            this.bnt_ConsultarCliente.Click += new System.EventHandler(this.bnt_ConsultarCliente_Click);
+            // 
+            // bnt_AddCliente
+            // 
+            this.bnt_AddCliente.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(96)))), ((int)(((byte)(140)))));
+            this.bnt_AddCliente.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bnt_AddCliente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bnt_AddCliente.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bnt_AddCliente.ForeColor = System.Drawing.Color.White;
+            this.bnt_AddCliente.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.bnt_AddCliente.Location = new System.Drawing.Point(443, 27);
+            this.bnt_AddCliente.Name = "bnt_AddCliente";
+            this.bnt_AddCliente.Size = new System.Drawing.Size(113, 63);
+            this.bnt_AddCliente.TabIndex = 2;
+            this.bnt_AddCliente.Text = "Adicionar Cliente";
+            this.bnt_AddCliente.UseVisualStyleBackColor = false;
+            this.bnt_AddCliente.Click += new System.EventHandler(this.bnt_AddCliente_Click);
+            // 
+            // pnl_TotalCliente
+            // 
+            this.pnl_TotalCliente.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(68)))), ((int)(((byte)(89)))));
+            this.pnl_TotalCliente.Controls.Add(this.pictureBox1);
+            this.pnl_TotalCliente.Controls.Add(this.lb_TotalClientes);
+            this.pnl_TotalCliente.Controls.Add(this.label1);
+            this.pnl_TotalCliente.Location = new System.Drawing.Point(28, 12);
+            this.pnl_TotalCliente.Name = "pnl_TotalCliente";
+            this.pnl_TotalCliente.Size = new System.Drawing.Size(148, 78);
+            this.pnl_TotalCliente.TabIndex = 0;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox1.Image = global::SistemaERP.Properties.Resources.customers;
+            this.pictureBox1.Location = new System.Drawing.Point(3, 15);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(52, 52);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox1.TabIndex = 2;
+            this.pictureBox1.TabStop = false;
+            // 
+            // lb_TotalClientes
+            // 
+            this.lb_TotalClientes.AutoSize = true;
+            this.lb_TotalClientes.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_TotalClientes.ForeColor = System.Drawing.Color.White;
+            this.lb_TotalClientes.Location = new System.Drawing.Point(89, 15);
+            this.lb_TotalClientes.Name = "lb_TotalClientes";
+            this.lb_TotalClientes.Size = new System.Drawing.Size(18, 19);
+            this.lb_TotalClientes.TabIndex = 1;
+            this.lb_TotalClientes.Text = "0";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(59, 49);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(85, 16);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Total Clientes";
+            // 
             // Clientes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(68)))), ((int)(((byte)(89)))));
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
             this.Name = "Clientes";
@@ -294,12 +312,12 @@
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dvg_TodosClientes)).EndInit();
             this.panel1.ResumeLayout(false);
-            this.pnl_TotalCliente.ResumeLayout(false);
-            this.pnl_TotalCliente.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            this.pnl_TotalCliente.ResumeLayout(false);
+            this.pnl_TotalCliente.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -328,5 +346,6 @@
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label lb_ClientesAtivo;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Button bnt_GerarRelatorio;
     }
 }

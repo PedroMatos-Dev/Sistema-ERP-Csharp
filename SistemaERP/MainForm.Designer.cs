@@ -41,10 +41,10 @@
             this.label3 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.MainForms = new System.Windows.Forms.Panel();
+            this.painelVenda1 = new SistemaERP.PainelVenda();
+            this.estoque1 = new SistemaERP.Estoque();
             this.clientes1 = new SistemaERP.Clientes();
             this.dashbord1 = new SistemaERP.Dashbord();
-            this.estoque1 = new SistemaERP.Estoque();
-            this.painelVenda1 = new SistemaERP.PainelVenda();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -53,7 +53,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(11)))), ((int)(((byte)(97)))));
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(68)))), ((int)(((byte)(89)))));
             this.panel1.Controls.Add(this.lb_Exit);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
@@ -88,7 +88,7 @@
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(11)))), ((int)(((byte)(97)))));
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(68)))), ((int)(((byte)(89)))));
             this.panel2.Controls.Add(this.bnt_Venda);
             this.panel2.Controls.Add(this.label4);
             this.panel2.Controls.Add(this.btn_Logout);
@@ -107,8 +107,8 @@
             // 
             this.bnt_Venda.Cursor = System.Windows.Forms.Cursors.Hand;
             this.bnt_Venda.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(8)))), ((int)(((byte)(135)))));
-            this.bnt_Venda.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(8)))), ((int)(((byte)(135)))));
-            this.bnt_Venda.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(8)))), ((int)(((byte)(135)))));
+            this.bnt_Venda.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(96)))), ((int)(((byte)(140)))));
+            this.bnt_Venda.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(96)))), ((int)(((byte)(140)))));
             this.bnt_Venda.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bnt_Venda.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bnt_Venda.ForeColor = System.Drawing.Color.White;
@@ -154,8 +154,8 @@
             // 
             this.bnt_Dashbord.Cursor = System.Windows.Forms.Cursors.Hand;
             this.bnt_Dashbord.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(8)))), ((int)(((byte)(135)))));
-            this.bnt_Dashbord.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(8)))), ((int)(((byte)(135)))));
-            this.bnt_Dashbord.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(8)))), ((int)(((byte)(135)))));
+            this.bnt_Dashbord.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(96)))), ((int)(((byte)(140)))));
+            this.bnt_Dashbord.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(96)))), ((int)(((byte)(140)))));
             this.bnt_Dashbord.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bnt_Dashbord.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bnt_Dashbord.ForeColor = System.Drawing.Color.White;
@@ -173,8 +173,8 @@
             // 
             this.bnt_Estoque.Cursor = System.Windows.Forms.Cursors.Hand;
             this.bnt_Estoque.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(8)))), ((int)(((byte)(135)))));
-            this.bnt_Estoque.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(8)))), ((int)(((byte)(135)))));
-            this.bnt_Estoque.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(8)))), ((int)(((byte)(135)))));
+            this.bnt_Estoque.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(96)))), ((int)(((byte)(140)))));
+            this.bnt_Estoque.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(96)))), ((int)(((byte)(140)))));
             this.bnt_Estoque.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bnt_Estoque.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bnt_Estoque.ForeColor = System.Drawing.Color.White;
@@ -192,8 +192,8 @@
             // 
             this.bnt_Cliente.Cursor = System.Windows.Forms.Cursors.Hand;
             this.bnt_Cliente.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(8)))), ((int)(((byte)(135)))));
-            this.bnt_Cliente.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(8)))), ((int)(((byte)(135)))));
-            this.bnt_Cliente.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(8)))), ((int)(((byte)(135)))));
+            this.bnt_Cliente.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(96)))), ((int)(((byte)(140)))));
+            this.bnt_Cliente.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(96)))), ((int)(((byte)(140)))));
             this.bnt_Cliente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bnt_Cliente.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bnt_Cliente.ForeColor = System.Drawing.Color.White;
@@ -240,8 +240,25 @@
             this.MainForms.Size = new System.Drawing.Size(865, 565);
             this.MainForms.TabIndex = 2;
             // 
+            // painelVenda1
+            // 
+            this.painelVenda1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.painelVenda1.Location = new System.Drawing.Point(0, 0);
+            this.painelVenda1.Name = "painelVenda1";
+            this.painelVenda1.Size = new System.Drawing.Size(865, 565);
+            this.painelVenda1.TabIndex = 3;
+            // 
+            // estoque1
+            // 
+            this.estoque1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.estoque1.Location = new System.Drawing.Point(0, 0);
+            this.estoque1.Name = "estoque1";
+            this.estoque1.Size = new System.Drawing.Size(865, 565);
+            this.estoque1.TabIndex = 2;
+            // 
             // clientes1
             // 
+            this.clientes1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.clientes1.Location = new System.Drawing.Point(0, 0);
             this.clientes1.Name = "clientes1";
             this.clientes1.Size = new System.Drawing.Size(865, 565);
@@ -254,20 +271,6 @@
             this.dashbord1.Name = "dashbord1";
             this.dashbord1.Size = new System.Drawing.Size(865, 565);
             this.dashbord1.TabIndex = 0;
-            // 
-            // estoque1
-            // 
-            this.estoque1.Location = new System.Drawing.Point(0, 0);
-            this.estoque1.Name = "estoque1";
-            this.estoque1.Size = new System.Drawing.Size(865, 565);
-            this.estoque1.TabIndex = 2;
-            // 
-            // painelVenda1
-            // 
-            this.painelVenda1.Location = new System.Drawing.Point(0, 0);
-            this.painelVenda1.Name = "painelVenda1";
-            this.painelVenda1.Size = new System.Drawing.Size(865, 565);
-            this.painelVenda1.TabIndex = 3;
             // 
             // MainForm
             // 

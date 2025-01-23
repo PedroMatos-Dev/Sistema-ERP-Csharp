@@ -34,6 +34,7 @@
             this.rb_Online = new System.Windows.Forms.RadioButton();
             this.cb_Jogos = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.pcb_FotoJogo = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.lb_Data = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -41,6 +42,8 @@
             this.label2 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.txt_Quantidade = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
             this.cbo_Parcelas = new System.Windows.Forms.ComboBox();
             this.label22 = new System.Windows.Forms.Label();
             this.cbo_TipoDePagamento = new System.Windows.Forms.ComboBox();
@@ -77,24 +80,21 @@
             this.txt_Nome = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.pcb_FotoJogo = new System.Windows.Forms.PictureBox();
-            this.txt_Quantidade = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.gb_Plataforma.SuspendLayout();
             this.gb_TipoDeVenda.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb_FotoJogo)).BeginInit();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             this.groupBox5.SuspendLayout();
             this.groupBox4.SuspendLayout();
             this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txt_ID)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pcb_FotoJogo)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(11)))), ((int)(((byte)(97)))));
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(68)))), ((int)(((byte)(89)))));
             this.panel1.Controls.Add(this.bnt_GerarVenda);
             this.panel1.Controls.Add(this.gb_Plataforma);
             this.panel1.Controls.Add(this.gb_TipoDeVenda);
@@ -108,8 +108,8 @@
             // 
             // bnt_GerarVenda
             // 
-            this.bnt_GerarVenda.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(8)))), ((int)(((byte)(135)))));
-            this.bnt_GerarVenda.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(8)))), ((int)(((byte)(135)))));
+            this.bnt_GerarVenda.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(96)))), ((int)(((byte)(140)))));
+            this.bnt_GerarVenda.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(96)))), ((int)(((byte)(140)))));
             this.bnt_GerarVenda.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bnt_GerarVenda.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bnt_GerarVenda.ForeColor = System.Drawing.Color.White;
@@ -281,9 +281,18 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "JOGO: ";
             // 
+            // pcb_FotoJogo
+            // 
+            this.pcb_FotoJogo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pcb_FotoJogo.Location = new System.Drawing.Point(44, 59);
+            this.pcb_FotoJogo.Name = "pcb_FotoJogo";
+            this.pcb_FotoJogo.Size = new System.Drawing.Size(165, 167);
+            this.pcb_FotoJogo.TabIndex = 0;
+            this.pcb_FotoJogo.TabStop = false;
+            // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(11)))), ((int)(((byte)(97)))));
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(68)))), ((int)(((byte)(89)))));
             this.panel2.Controls.Add(this.lb_Data);
             this.panel2.Controls.Add(this.label4);
             this.panel2.Controls.Add(this.lb_cliente);
@@ -339,7 +348,7 @@
             // 
             // panel3
             // 
-            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(11)))), ((int)(((byte)(97)))));
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(68)))), ((int)(((byte)(89)))));
             this.panel3.Controls.Add(this.groupBox5);
             this.panel3.Controls.Add(this.groupBox4);
             this.panel3.Controls.Add(this.groupBox3);
@@ -372,6 +381,24 @@
             this.groupBox5.TabIndex = 12;
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Informações da Venda";
+            // 
+            // txt_Quantidade
+            // 
+            this.txt_Quantidade.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_Quantidade.Location = new System.Drawing.Point(388, 28);
+            this.txt_Quantidade.Name = "txt_Quantidade";
+            this.txt_Quantidade.Size = new System.Drawing.Size(139, 22);
+            this.txt_Quantidade.TabIndex = 16;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(295, 28);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(87, 18);
+            this.label5.TabIndex = 15;
+            this.label5.Text = "Quantidade:";
             // 
             // cbo_Parcelas
             // 
@@ -772,33 +799,6 @@
             this.label6.TabIndex = 0;
             this.label6.Text = "Id:";
             // 
-            // pcb_FotoJogo
-            // 
-            this.pcb_FotoJogo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pcb_FotoJogo.Location = new System.Drawing.Point(44, 59);
-            this.pcb_FotoJogo.Name = "pcb_FotoJogo";
-            this.pcb_FotoJogo.Size = new System.Drawing.Size(165, 167);
-            this.pcb_FotoJogo.TabIndex = 0;
-            this.pcb_FotoJogo.TabStop = false;
-            // 
-            // txt_Quantidade
-            // 
-            this.txt_Quantidade.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_Quantidade.Location = new System.Drawing.Point(388, 28);
-            this.txt_Quantidade.Name = "txt_Quantidade";
-            this.txt_Quantidade.Size = new System.Drawing.Size(139, 22);
-            this.txt_Quantidade.TabIndex = 16;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(295, 28);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(87, 18);
-            this.label5.TabIndex = 15;
-            this.label5.Text = "Quantidade:";
-            // 
             // PainelVenda
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -815,6 +815,7 @@
             this.gb_Plataforma.PerformLayout();
             this.gb_TipoDeVenda.ResumeLayout(false);
             this.gb_TipoDeVenda.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb_FotoJogo)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel3.ResumeLayout(false);
@@ -825,7 +826,6 @@
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txt_ID)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pcb_FotoJogo)).EndInit();
             this.ResumeLayout(false);
 
         }

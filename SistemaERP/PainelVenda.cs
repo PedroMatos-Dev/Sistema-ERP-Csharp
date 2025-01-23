@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -26,7 +27,7 @@ namespace SistemaERP {
         private void bnt_GerarVenda_Click(object sender, EventArgs e) {
             string email = txt_Email.Text;
             string cpf = txt_Cpf.Text.Replace(".", "").Replace("-", "");
-            
+
 
             if (!VerificarCamposPreenchidos()) {
                 return;
@@ -39,44 +40,44 @@ namespace SistemaERP {
                         string query = "SELECT COUNT(*) FROM vendas";
 
                         using (SqlCommand command = new SqlCommand(query, connection)) {
-                            
-                                DateTime today = DateTime.Today;
 
-                                string insertData = "INSERT INTO vendas " +
-                                    "(id_cliente, nome, cpf, celular, email, cep," +
-                                    "cidade, rua, estado, bairro, numero, jogo, quantidade," + 
-                                    "plataforma, valor, tipo_venda, tipo_pagamento, parcelas, data_venda)" +
-                                    "VALUES(@id_cliente, @nome, @cpf, @celular, @email, @cep," +
-                                    "@cidade, @rua, @estado, @bairro, @numero, @jogo, @quantidade," +
-                                    "@plataforma, @valor, @tipo_venda, @tipo_pagamento, @parcelas, @data_venda)";
+                            DateTime today = DateTime.Today;
 
-                                using (SqlCommand cmd = new SqlCommand(insertData, connection)) {
+                            string insertData = "INSERT INTO vendas " +
+                                "(id_cliente, nome, cpf, celular, email, cep," +
+                                "cidade, rua, estado, bairro, numero, jogo, quantidade," +
+                                "plataforma, valor, tipo_venda, tipo_pagamento, parcelas, data_venda)" +
+                                "VALUES(@id_cliente, @nome, @cpf, @celular, @email, @cep," +
+                                "@cidade, @rua, @estado, @bairro, @numero, @jogo, @quantidade," +
+                                "@plataforma, @valor, @tipo_venda, @tipo_pagamento, @parcelas, @data_venda)";
 
-                                    cmd.Parameters.AddWithValue("@id_cliente", Convert.ToInt32(txt_ID.Value));
-                                    cmd.Parameters.AddWithValue("@nome", txt_Nome.Text.Trim());
-                                    cmd.Parameters.AddWithValue("@cpf", txt_Cpf.Text.Replace(".", "").Replace("-", ""));
-                                    cmd.Parameters.AddWithValue("@celular", txt_Celular.Text.Replace("(", "").Replace(")", "").Replace("-", "").Replace(" ", ""));
-                                    cmd.Parameters.AddWithValue("@email", txt_Email.Text.Trim());
-                                    cmd.Parameters.AddWithValue("@cep", txt_Cep.Text.Trim());
-                                    cmd.Parameters.AddWithValue("@cidade", txt_Cidade.Text.Trim());
-                                    cmd.Parameters.AddWithValue("@Rua", txt_Rua.Text.Trim());
-                                    cmd.Parameters.AddWithValue("@estado", cbo_Estado.Text.Trim());
-                                    cmd.Parameters.AddWithValue("@bairro", txt_Bairro.Text.Trim());
-                                    cmd.Parameters.AddWithValue("@numero", txt_Numero.Text.Trim());
-                                    cmd.Parameters.AddWithValue("@jogo", txt_Jogo.Text.Trim());
-                                    cmd.Parameters.AddWithValue("@quantidade", txt_Quantidade.Text.Trim());
-                                    cmd.Parameters.AddWithValue("@plataforma", txt_Plataforma.Text.Trim());
-                                    cmd.Parameters.AddWithValue("@valor", Convert.ToDecimal(txt_ValorJogo.Text.Trim()));
-                                    cmd.Parameters.AddWithValue("@tipo_venda", txt_TipoVenda.Text.Trim());
-                                    cmd.Parameters.AddWithValue("@tipo_pagamento", cbo_TipoDePagamento.Text.Trim());
-                                    cmd.Parameters.AddWithValue("@parcelas", cbo_Parcelas.Text.Trim());
-                                    cmd.Parameters.AddWithValue("@data_venda", today);
+                            using (SqlCommand cmd = new SqlCommand(insertData, connection)) {
 
-                                    cmd.ExecuteNonQuery();
+                                cmd.Parameters.AddWithValue("@id_cliente", Convert.ToInt32(txt_ID.Value));
+                                cmd.Parameters.AddWithValue("@nome", txt_Nome.Text.Trim());
+                                cmd.Parameters.AddWithValue("@cpf", txt_Cpf.Text.Replace(".", "").Replace("-", ""));
+                                cmd.Parameters.AddWithValue("@celular", txt_Celular.Text.Replace("(", "").Replace(")", "").Replace("-", "").Replace(" ", ""));
+                                cmd.Parameters.AddWithValue("@email", txt_Email.Text.Trim());
+                                cmd.Parameters.AddWithValue("@cep", txt_Cep.Text.Trim());
+                                cmd.Parameters.AddWithValue("@cidade", txt_Cidade.Text.Trim());
+                                cmd.Parameters.AddWithValue("@Rua", txt_Rua.Text.Trim());
+                                cmd.Parameters.AddWithValue("@estado", cbo_Estado.Text.Trim());
+                                cmd.Parameters.AddWithValue("@bairro", txt_Bairro.Text.Trim());
+                                cmd.Parameters.AddWithValue("@numero", txt_Numero.Text.Trim());
+                                cmd.Parameters.AddWithValue("@jogo", txt_Jogo.Text.Trim());
+                                cmd.Parameters.AddWithValue("@quantidade", txt_Quantidade.Text.Trim());
+                                cmd.Parameters.AddWithValue("@plataforma", txt_Plataforma.Text.Trim());
+                                cmd.Parameters.AddWithValue("@valor", Convert.ToDecimal(txt_ValorJogo.Text.Trim()));
+                                cmd.Parameters.AddWithValue("@tipo_venda", txt_TipoVenda.Text.Trim());
+                                cmd.Parameters.AddWithValue("@tipo_pagamento", cbo_TipoDePagamento.Text.Trim());
+                                cmd.Parameters.AddWithValue("@parcelas", cbo_Parcelas.Text.Trim());
+                                cmd.Parameters.AddWithValue("@data_venda", today);
 
-                                    MessageBox.Show("Sucesso! Dados salvos.",
-                                                    "Information Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                                }
+                                cmd.ExecuteNonQuery();
+
+                                MessageBox.Show("Sucesso! Dados salvos.",
+                                                "Information Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            }
 
                         }
                     }
@@ -90,7 +91,6 @@ namespace SistemaERP {
             }
             LimparCampos();
         }
-    
 
         private void txt_ID_ValueChanged(object sender, EventArgs e) {
             MostrarDados();
@@ -119,9 +119,9 @@ namespace SistemaERP {
 
                                 lb_cliente.Text = reader["nome"].ToString();
                                 txt_Nome.Text = reader["nome"].ToString();
-                                txt_Cpf.Text = reader["cpf"].ToString();
-                                txt_Celular.Text = reader["celular"].ToString();
-                                txt_Cep.Text = reader["cep"].ToString();
+                                txt_Cpf.Text = MascararValor(reader["cpf"].ToString(), 3, 2);
+                                txt_Celular.Text = MascararValor(reader["celular"].ToString(), 3, 2);
+                                txt_Cep.Text = MascararValor(reader["cep"].ToString(), 5, 0);
                                 txt_Rua.Text = reader["longadouro"].ToString();
                                 txt_Numero.Text = reader["numero"].ToString();
                                 txt_Bairro.Text = reader["bairro"].ToString();
@@ -132,8 +132,9 @@ namespace SistemaERP {
 
                             }
                             else {
-                                MessageBox.Show("ID não encontrado.", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                                LimparCampos(); // Limpa os campos se não houver dados
+                                //Mensagem para avisar que id não foi encontrado ou não contas no BD
+                                //MessageBox.Show("ID não encontrado.", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                                LimparCamposCliente(); // Limpa os campos se não houver dados
                             }
                         }
                     }
@@ -141,12 +142,42 @@ namespace SistemaERP {
             }
             catch (Exception ex) {
                 MessageBox.Show("Erro: " + ex.Message, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+
             }
+
         }
 
         private void AtualizarLabelComData() {
             // Define o texto da label com a data atual formatada
             lb_Data.Text = DateTime.Now.ToString("dd/MM/yy");
+        }
+
+        void LimparCamposCliente() {
+            txt_Bairro.Text = "";
+            txt_Cidade.Text = "";
+            txt_Email.Text = "";
+            txt_Numero.Text = "";
+            txt_Celular.Text = "";
+            txt_Cep.Text = "";
+            txt_Cpf.Text = "";
+            txt_Nome.Text = "";
+            txt_ID.Text = "";
+            cbo_Estado.Text = "";
+            txt_Rua.Text = "";
+            cb_Jogos.Text = "";
+            txt_Jogo.Text = "";
+            txt_Quantidade.Text = "";
+            txt_ValorJogo.Text = "";
+            txt_TipoVenda.Text = "";
+            txt_Plataforma.Text = "";
+            cbo_Parcelas.Text = "";
+            cbo_TipoDePagamento.Text = "";
+            rb_Online.Checked = false;
+            rb_Presencial.Checked = false;
+            rb_Playstation.Checked = false;
+            rb_Steam.Checked = false;
+            rb_Xbox.Checked = false;
         }
 
         void LimparCampos() {
@@ -163,6 +194,7 @@ namespace SistemaERP {
             rb_Playstation.Checked = false;
             rb_Steam.Checked = false;
             rb_Xbox.Checked = false;
+            pcb_FotoJogo.Image = null;
         }
 
         void DesabilitaEdicao() {
@@ -205,9 +237,47 @@ namespace SistemaERP {
             return camposValidos;
         }
 
-
         private void cb_Jogos_SelectedIndexChanged(object sender, EventArgs e) {
             txt_Jogo.Text = cb_Jogos.SelectedItem.ToString();
+
+            string jogoSelecionado = cb_Jogos.SelectedItem.ToString();
+
+            try {
+                using (SqlConnection connection = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""C:\Programação\Banco\SalesSystem - C#\SalesSystem.mdf"";Integrated Security=True;Connect Timeout=30")) {
+                    connection.Open();
+
+                    // Consulta SQL para buscar o valor e a foto do jogo
+                    string query = "SELECT valor, fotoJogo FROM estoquedejogos WHERE jogo = @jogo";
+                    using (SqlCommand command = new SqlCommand(query, connection)) {
+                        command.Parameters.AddWithValue("@jogo", jogoSelecionado);
+
+                        using (SqlDataReader reader = command.ExecuteReader()) {
+                            if (reader.Read()) {
+                                // Exibir o valor do jogo no TextBox
+                                txt_ValorJogo.Text = reader["valor"].ToString();
+
+                                // Exibir a imagem no PictureBox, se disponível
+                                if (reader["fotoJogo"] != DBNull.Value) {
+                                    byte[] imageBytes = (byte[])reader["fotoJogo"];
+                                    using (MemoryStream ms = new MemoryStream(imageBytes)) {
+                                        pcb_FotoJogo.Image = Image.FromStream(ms);
+                                        pcb_FotoJogo.SizeMode = PictureBoxSizeMode.StretchImage; // Ajusta a imagem ao tamanho do PictureBox
+                                    }
+                                }
+                                else {
+                                    pcb_FotoJogo.Image = null; // Caso não tenha imagem
+                                }
+                            }
+                            else {
+                                MessageBox.Show("Jogo não encontrado no banco de dados.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            }
+                        }
+                    }
+                }
+            }
+            catch (Exception ex) {
+                MessageBox.Show("Erro ao buscar dados: " + ex.Message, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void rb_Online_CheckedChanged(object sender, EventArgs e) {
@@ -233,6 +303,16 @@ namespace SistemaERP {
         private void rb_Playstation_CheckedChanged(object sender, EventArgs e) {
             if (rb_Playstation.Checked)
                 txt_Plataforma.Text = "Playstantion";
+        }
+
+        string MascararValor(string valor, int prefixo, int sufixo) {
+            if (string.IsNullOrEmpty(valor) || valor.Length <= (prefixo + sufixo))
+                return valor; // Se o valor for curto demais, retorna sem mascarar
+
+            int mascararTamanho = valor.Length - (prefixo + sufixo);
+            string mascarado = new string('*', mascararTamanho);
+
+            return valor.Substring(0, prefixo) + mascarado + valor.Substring(valor.Length - sufixo);
         }
     }
 }
